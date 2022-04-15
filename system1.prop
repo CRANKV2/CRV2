@@ -1,0 +1,17 @@
+# Unlocker prop
+ro.product.model
+
+# Disable LMK debugging
+persist.sys.lmk.reportkills=false
+sys.lmk.reportkills=false
+ro.lmk.debug=false
+ro.lmk.log_stats=false
+
+# Disable traced
+persist.traced.enable=0
+persist.traced_perf.enable=0
+
+# Disable vidc debugging
+vendor.vidc.debug.level=0
+vidc.debug.level=0
+

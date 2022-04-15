@@ -1,0 +1,45 @@
+#!/system/bin/sh
+# Credits to Pedro, developer of ktsr.
+
+rm -rf \
+/data/*.log \
+/data/vendor/wlan_logs \
+/data/*.txt \
+/cache/*.apk \
+/data/anr/* \
+/data/backup/pending/*.tmp \
+/data/cache/*.* \
+/data/data/*.log \
+/data/data/*.txt \
+/data/log/*.log \
+/data/log/*.txt \
+/data/local/*.apk \
+/data/local/*.log \
+/data/local/*.txt \
+/data/mlog/* \
+/data/system/*.log \
+/data/system/*.txt \
+/data/system/dropbox/* \
+/data/system/usagestats/* \
+/data/system/shared_prefs/* \
+/data/tombstones/* \
+/data/media/0/LOST.DIR \
+/data/media/0/found000 \
+/data/media/0/LazyList \
+/data/media/0/albumthumbs \
+/data/media/0/kunlun \
+/data/media/0/.CacheOfEUI \
+/data/media/0/.bstats \
+/data/media/0/.taobao \
+/data/media/0/Backucup \
+/data/media/0/MIUI/debug_log \
+/data/media/0/ramdump \
+/data/media/0/UnityAdsVideoCache \
+/data/media/0/*.log \
+/data/media/0/*.CHK \
+/data/media/0/duilite \
+/data/media/0/DkMiBrowserDemo \
+/data/media/0/.xlDownload \
+
+# always return success, even if any command fail
+exit 0
