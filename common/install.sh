@@ -62,6 +62,8 @@ sleep 1
 fstrim -v /system
 fstrim -v /data
 fstrim -v /cache
+fstrim -v /vendor;
+fstrim -v /product;
 ui_print " "
 fi
 sleep 2
