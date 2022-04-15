@@ -59,6 +59,8 @@ For you to report bugs, you must go to my telegram channel and report there, gro
 
 * LeeXDA18 @ (Telegram)
 
+* huesos97 @ (Telegram)
+
 
 ## thx all ❤️
 # 
