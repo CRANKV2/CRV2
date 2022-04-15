@@ -1,0 +1,7 @@
+id=CRV2
+name=CV2Tweaks
+version=v2.0
+versionCode=20
+author=@CRANKV2
+description=Focused on Maximizing user experience, multiple profiles Changeable in-app + Termux Menu! Enjoy!
+updateJson=https://raw.githubusercontent.com/raidenkkj/Raiden-Tweaks/update.json
