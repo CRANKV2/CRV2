@@ -636,7 +636,7 @@ Uninstall () {
 
 Return() {
     printf "\033c"
-    rtksmenu
+    crv2menu
     printf "\033c"
 }
 
