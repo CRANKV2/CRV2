@@ -43,7 +43,6 @@ REPLACE="
 set_permissions() {
   set_perm_recursive $MODPATH 0 0 0755 0644
   set_perm_recursive $MODPATH/system/bin root root 0777 0755
-  set_perm_recursive $MODPATH/system/etc/init.d 0 0 0777 0777
 }
 
 ##########################################################################################
@@ -53,4 +52,4 @@ set_permissions() {
 SKIPUNZIP=1
 unzip -qjo "$ZIPFILE" 'common/functions.sh' -d $TMPDIR >&2
 . $TMPDIR/functions.sh
-pm install $MODPATH/RaidenTweaks.apk
+pm install $MODPATH/CV2Tweaks.apk

@@ -1,4 +1,3 @@
-set_perm_recursive "$MODPATH/system/bin" root root 0777 0755
 ui_print " "
 ui_print "🇨‌🇻‌② 🇹‌🇼‌🇪‌🇦‌🇰‌🇸‌"
 ui_print " "
@@ -7,8 +6,10 @@ ui_print " "
 ui_print "CODENAME: THUNDER"
 sleep 2
 ui_print " "
-ui_print "With this module you can choose different profiles and improve your user experience."
-ui_print " "
+ui_print "With this module"
+ui_print "you can choose"
+ui_print "different profiles"
+ui_print "and improve your user experience."
 sleep 3
 ui_print " "
 sleep 0.5
@@ -62,12 +63,10 @@ sleep 1
 fstrim -v /system
 fstrim -v /data
 fstrim -v /cache
-fstrim -v /vendor;
-fstrim -v /product;
 ui_print " "
 fi
 sleep 2
-ui_print "[⚡️] Checking now for possible conflicts..."
+ui_print "[⚡️] Checking for possible conflicts..."
 ui_print " "
 
 if [ -d $MODDIR/FDE ]; then
@@ -157,13 +156,18 @@ APEX="/data/data/com.ea.gp.apexlegendsmobilefps/files/UE4Game/AClient/AClient/Sa
  
 sleep 3
 ui_print " [!] Important:"
-ui_print "These settings can cause errors in system applications. "
+ui_print "These settings (can) cause"
+ui_print "errors in system applications."
 sleep 0.5
 ui_print " "
-ui_print "If u face some issue don't use one of this options, handle with care!"
+ui_print "If u face some issue"
+ui_print "don't use one of this options"
+ui_print "handle with care!"
 sleep 1
 ui_print " "
-ui_print "Might not work if you are using magiskhideprops or other module like this. "
+ui_print "Might not work"
+ui_print "if you are using magiskhideprops"
+ui_print "or other Tweak module"
 ui_print " "
 ui_print " "
 sleep 0.5
@@ -197,7 +201,9 @@ sleep 0.5
 ui_print " 10- Apply Asphalt 9 and Sky Children of the Light 60 FPS Settings"
 ui_print " "
 sleep 0.5
-ui_print "[⚡️] Select which you want otherwise Select 'NONE' and Continue with MAIN Module! : "
+ui_print "[⚡️] Select which you want"
+ui_print "otherwise Select 'NONE'"
+ui_print "and Continue!"
 ui_print " "
 KU=1
 while true
@@ -236,19 +242,28 @@ ui_print " "
 ui_print " - Contributors, credits:"
 sleep 1
 ui_print " "
-ui_print " - pedro3z0, frap129, KiraaDeath, Haxis_Lancelot, imUsiF12, Veez21, Zackptg5 ❤️ "
+ui_print " - pedro3z0, frap129, KiraaDeath ❤️ "
+ui_print "Haxis_Lancelot, imUsiF12, Veez21 ❤️"
+ui_print "Zackptg5 ❤️"
 sleep 1
 ui_print " "
-ui_print " And especially my Lovely Testers.. @Nathan, @MRDOCA, @xxcarlos84xx, @LeeXDA18, @UshieKane ❤️"
+ui_print " And especially my Lovely Testers.. "
+ui_print "@Nathan, @MRDOCA ❤"
+ui_print "@xxcarlos84xx, @LeeXDA18 ❤"
+ui_print "@UshieKane ❤"
 sleep 1
 ui_print " "
-ui_print " - [⚡️] Join my support group: @AndroidRootModulesCommunity (Telegram)"
+ui_print " - [⚡️] Join my support group:" 
+ui_print "AndroidRootModulesCommunity"
+ui_print "(@Telegram)"
 sleep 1
 ui_print " "
-ui_print " ❤️ Thanks to everyone for testing and helping me. ❤️"
+ui_print " ❤️ Thanks to everyone ❤️" 
+ui_print "❤️ for testing and helping me. ❤️"
 sleep 1
 ui_print " "
-ui_print "[⚡️] Downloading the latest script(s) / application from Github..."
+ui_print "[⚡️] Downloading the latest"
+ui_print "script(s) / application from Github..."
 ui_print " "
 
 wget -O "${MODPATH}/system/bin/crv2twtweaks" "https://raw.githubusercontent.com/CRANKV2/CRV2Tweaks/main/system/bin/crv2twtweaks"
@@ -272,9 +287,13 @@ ui_print "[⚡️] Installing toasts app..."
 pm install /data/local/tmp/CV2Toast.apk
 ui_print " "
 ui_print " [⚡️] The logs are hidden."
-ui_print "  [⚡️] if you need the logs, retrieve it by using Termux and type (su -c crv2menu."
+ui_print "  [⚡️] if you need the logs" 
+ui_print "retrieve it by using Termux" 
+ui_print "type (su -c crv2menu."
 sleep 1
 ui_print " "
-ui_print " - [⚡️] CV2 Tweaks Module has been installed successfuly! Restart phone and ENJOY!"
+ui_print "[⚡️] CV2 Tweaks Module [⚡️]"
+ui_print "has been installed successfuly!"
+ui_print "Restart phone and ENJOY!"
 ui_print " "
 sleep 2
