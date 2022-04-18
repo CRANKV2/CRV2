@@ -71,7 +71,7 @@ else
     ts=Unknown
 fi
 
-V="2.0"
+V="0.3.0"
 DEV="CRANKV2"
 CDNM="THUNDER"
 magisk=`magisk -c`
@@ -81,8 +81,8 @@ Menu() {
     echo -e '\n'
     printf "\033c"
     echo "${Y}|   This is official CV2 Tweaks Menu.   |${N}"
-    echo "${Y}|                Created and written                |${N}"
-    echo "${Y}|                By $DEV @ telegram               |${N}"
+    echo "${Y}|          Created and written          |${N}"
+    echo "${Y}|           By $DEV @ telegram          |${N}"
     echo ""
     echo "${Y}[*] Your device:${B} $(getprop ro.product.model) ${N}"
     echo ""
