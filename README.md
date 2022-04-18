@@ -9,7 +9,7 @@ Latest Busybox
 
 Android 5.0+
 
-## Use with Termux
+## Termux Command:
 su -c crv2menu
 
 
@@ -100,4 +100,4 @@ For you to report bugs, you must go to my telegram channel and report there, gro
 
 
 ## thx all ❤️
-# 
+
