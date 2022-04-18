@@ -25,4 +25,9 @@ crv2twtweaks
 # set swappiness to 100 (zram
 echo 100 > /proc/sys/vm/swappiness
 
+sleep 15
+am start -a android.intent.action.MAIN -e toasttext "CV2 Performance Module Starting" -n bellavita.toast/.MainActivity
+sleep 5
+am start -a android.intent.action.MAIN -e toasttext "A module made by @CRANKV2 | Join @AndroidRootModulesCommunity on Telegram" -n bellavita.toast/.MainActivity
+
 # done
