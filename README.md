@@ -1,4 +1,7 @@
 ## CRV2 - Tweaks
+
+ <a href="https://t.me/AndroidRootModulesCommunity"><img src="https://i.imgur.com/t9aSOH9.gif"></a>
+
 Focused on Maximizing user experience, multiple profiles Changeable in-app + Termux Menu! Enjoy!
 
 
