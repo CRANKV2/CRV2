@@ -141,6 +141,22 @@ elif [ -d $MODDIR/injector ]; then
 ui_print "[!] NFS Injector Module detected, removing for security reasons."
 touch $MODDIR/injector/disable
 
+elif [ -d $MODDIR/GamersExtreme ]; then
+ui_print "[!] GamersExtreme Module detected, im removing it.."
+touch $MODDIR/GamersExtreme/disable
+
+elif [ -d $MODDIR/xengine ]; then
+ui_print "[!] Xengine Module detected, im removing it.."
+touch $MODDIR/xengine/disable
+
+elif [ -d $MODDIR/PXT ]; then
+ui_print "[!] PXT Module detected, im removing it.."
+touch $MODDIR/PXT/disable
+
+elif [ -d $MODDIR/Godspeed ]; then
+ui_print "[!] GodSpeedModule Detected, im removing it.."
+touch $MODDIR/GodSpeed/disable
+
 elif [ "$(pm list package magnetarapp)" ]; then
 ui_print "[!] MAGNETAR App has been detected, I recommend removing the app to avoid conflicts."
 
