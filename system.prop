@@ -2,3 +2,9 @@ crv2tw.tweaks.support=1
 
 # Unlocker prop
 ro.product.model
+
+#Open Gl Speed
+pm.dexopt.first-boot=speed
+pm.dexopt.install=speed
+pm.dexopt.bg-dexopt=speed
+pm.dexopt.boot=speed
