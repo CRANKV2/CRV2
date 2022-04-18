@@ -60,10 +60,13 @@ then
 ui_print "Wait, process in progress..."
 ui_print " "
 sleep 1
-fstrim -v /system
-fstrim -v /data
-fstrim -v /cache
-ui_print " "
+fstrim -v /system;
+fstrim -v /data;
+fstrim -v /cache;
+sleep 1
+fstrim -v /vendor;
+fstrim -v /product;
+ui_print "DONE!"
 fi
 sleep 2
 ui_print "[⚡️] Checking for possible conflicts..."
