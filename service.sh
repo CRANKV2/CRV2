@@ -1,4 +1,10 @@
 #!/system/bin/sh
+MODDIR=${0%/*}
+rm -rf $MODPATH/LICENSE
+FILESPATH="system/bin"
+Path="/sdcard"
+bb="/data/adb/magisk/busybox"
+
 wait_until_login() {
 	# we doesn't have the permission to rw "/sdcard" before the user unlocks the screen
 	while [[ `getprop sys.boot_completed` -ne 1 && -d "/sdcard" ]]
@@ -16,6 +22,22 @@ wait_until_login() {
 }
 wait_until_login
 
+
+# Sleep until boot completed
+until [ "$(getprop sys.boot_completed)" = "1" ] || [ "$(getprop dev.bootcomplete)" = "1" ]
+do
+       sleep 1
+done
+sleep 1
+# sync before exuecuting scripts
+sync
+sleep 5
+# Start optimizations
+$bb sh "${FILESPATH}/sche"
+write(){
+chmod 0644 "$1"
+echo "$2" >"$1"
+}
 # Readme
 wget -O "${MODPATH}/storage/emulated/0/.CRV2/README.md" "https://raw.githubusercontent.com/CRANKV2/CRV2Tweaks/main/README.md"
 
@@ -125,9 +147,12 @@ su -c pm disable com.google.android.gms/com.google.android.gms.mdm.receivers.Mdm
 # set swappiness to 100 (zram
 echo 100 > /proc/sys/vm/swappiness
 
-sleep 15
-am start -a android.intent.action.MAIN -e toasttext "CV2 Performance Module Starting" -n bellavita.toast/.MainActivity
-sleep 5
-am start -a android.intent.action.MAIN -e toasttext "A module made by @CRANKV2 | Join @AndroidRootModulesCommunity on Telegram" -n bellavita.toast/.MainActivity
+sleep 2
 
+am start -a android.intent.action.MAIN -e toasttext "CV2 Performance Module Starting" -n bellavita.toast.MainActivity
+
+sleep 3
+
+am start -a android.intent.action.MAIN -e toasttext "A module made by @CRANKV2 | Join @AndroidRootModulesCommunity on Telegram" -n bellavita.toast.MainActivity
 # done
+
