@@ -51,7 +51,9 @@ sleep 1
     fstrim -v /system
     fstrim -v /data
     fstrim -v /cache
-    sleep 1
+    fstrim -v /vendor
+    fstrim -v /product
+    sleep 2
     echo ""
     echo "${G}Process finished!${N}"
     echo ""
