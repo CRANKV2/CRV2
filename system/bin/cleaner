@@ -2,7 +2,7 @@
 # Credits to Pedro, developer of ktsr.
 
 echo "${Y}||   Starting Cleaner by CV2 [THUNDER]   |${N}"
-sleep 5
+sleep 2
 rm -rf \
 /data/*.log \
 /data/vendor/wlan_logs \
@@ -42,8 +42,10 @@ rm -rf \
 /data/media/0/duilite \
 /data/media/0/DkMiBrowserDemo \
 /data/media/0/.xlDownload \
+
 echo "${Y}|  [ DONE! ] [Starting fstrim....]  |${N}"
-sleep 1
+sleep 5
+
     echo "${G}Fstrim initializing, please wait... ${N}"
     sleep 3
     echo ""
@@ -59,4 +61,4 @@ sleep 1
     echo "Exiting Termux now please wait..."
     sleep 5
 # always return success, even if any command fail
-exit
+am startservice -a com.termux.service_stop com.termux/.app.TermuxService
