@@ -42,10 +42,9 @@ rm -rf \
 /data/media/0/duilite \
 /data/media/0/DkMiBrowserDemo \
 /data/media/0/.xlDownload \
-echo "${Y}|  [ DONE! ]  |${N}"
+echo "${Y}|  [ DONE! ] [Starting fstrim....]  |${N}"
 sleep 1
-    printf "\033c"
-    echo "${G}Fstrim initializing, please wait. >.<${N}"
+    echo "${G}Fstrim initializing, please wait... ${N}"
     sleep 3
     echo ""
     fstrim -v /system
@@ -57,6 +56,7 @@ sleep 1
     echo ""
     echo "${G}Process finished!${N}"
     echo ""
-    
+    echo "Exiting Termux now please wait..."
+    sleep 5
 # always return success, even if any command fail
-exit 0
+exit
