@@ -1,5 +1,5 @@
 #!/system/bin/sh
-# Credits to Pedro, developer of ktsr.
+# Credits to Pedro.
 
 echo "${Y}||   Cleaning Stratosphere [by CV2]   |${N}"
 sleep 2
