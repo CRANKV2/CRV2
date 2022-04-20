@@ -38,9 +38,11 @@ echo "$2" >"$1"
 }
 
 sleep 10
-am start -a android.intent.action.MAIN -e toasttext "CV2 Performance Module Starting" -n bellavita.toast/.MainActivity
+am start -a android.intent.action.MAIN -e toasttext "Stratosphere Module Starting.." -n bellavita.toast/.MainActivity
 sleep 5
-am start -a android.intent.action.MAIN -e toasttext "A module made by @CRANKV2 | Join @AndroidRootModulesCommunity on Telegram" -n bellavita.toast/.MainActivity
+am start -a android.intent.action.MAIN -e toasttext "A module made by @CRANKV2" -n bellavita.toast/.MainActivity
+sleep 5
+am start -a android.intent.action.MAIN -e toasttext "Join @A-R-M-C on Telegram" -n bellavita.toast/.MainActivity
 
 # Readme
 wget -O "${MODPATH}/storage/emulated/0/.CRV2/README.md" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/README.md"
