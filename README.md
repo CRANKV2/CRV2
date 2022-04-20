@@ -17,8 +17,10 @@ Latest Busybox
 Android 5.0+
 
 ## Termux Command:
-su -c crv2menu #TweakMenu
-su -c cleaner  #StratosphereCleaner
+--->su -c crv2menu #TweakMenu
+
+
+---->su -c cleaner  #StratosphereCleaner
 
 
 ## 5 Diffrent Profile's in CV2Tweaker App
