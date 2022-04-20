@@ -80,10 +80,7 @@ magisk=`magisk -c`
 Menu() {
     echo -e '\n'
     printf "\033c"
-	am start -a android.intent.action.MAIN -e toasttext "STRATOSPHERE BY @CRANKV2" -n bellavita.toast/.MainActivity
-	sleep 10
-	am start -a android.intent.action.MAIN -e toasttext "Join @AndoidRootModulesCommunity @Telegram" -n bellavita.toast/.MainActivity
-    echo "${Y}|   This is official CV2 Tweaks Menu.   |${N}"
+    echo "${Y}|    This is official STRATOSPHERE Menu.   |${N}"
     echo "${Y}|  Created and written by $DEV @ telegram  |${N}"
     echo ""
     echo "${Y}[*] Your device:${B} $(getprop ro.product.model) ${N}"
