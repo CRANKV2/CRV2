@@ -22,65 +22,8 @@ ui_print "With this module"
 ui_print "you can choose"
 ui_print "different profiles"
 ui_print "and improve your user experience."
-sleep 3
+sleep 5
 ui_print " "
-sleep 0.5
-ui_print "[⚡️] Do you want to fstrim the partitions? [Recommended]"
-sleep 3
-ui_print " "
-ui_print " Vol + = Switch option"
-ui_print ""
-sleep 0.2
-ui_print " Vol - = Select option"
-sleep 1
-ui_print " "
-ui_print " 1- Yes "
-ui_print ""
-sleep 0.5
-ui_print " 2- No "
-ui_print " "
-sleep 0.5
-ui_print "[!] Select you're desired option: "
-ui_print " "
-AO=1
-while true
-do
-ui_print "  $AO"
-if $VKSEL 
-then
-AO=$((AO + 1))
-else 
-break
-fi
-if [ $AO -gt 2 ]
-then
-AO=1
-fi
-done
-
-case $AO in
-1 ) FCTEXTAD2="Yes";;
-2 ) FCTEXTAD2="No";;
-esac
-
-ui_print " "
-ui_print "[⚡️] Selected: $FCTEXTAD2 "
-ui_print " "
-
-if [[ $FCTEXTAD2 == "Yes" ]]
-then
-ui_print "Wait, process in progress..."
-ui_print " "
-sleep 1
-fstrim -v /system;
-fstrim -v /data;
-fstrim -v /cache;
-sleep 1
-fstrim -v /vendor;
-fstrim -v /product;
-ui_print "DONE!"
-fi
-sleep 2
 ui_print "[⚡️] Checking for possible conflicts..."
 ui_print " "
 
@@ -179,6 +122,8 @@ elif [ "$(pm list package nfs)" ]; then
 ui_print "[!] NFS Manager App has been detected, I recommend removing the app to avoid conflicts."
 
     fi
+	
+ui_print "[⚡️]DONE!"
 sleep 1.5
 
 SC="/storage/emulated/0/Android/data/com.lnrgame.roguelike/files/SettingDatas.dat"
@@ -201,7 +146,7 @@ ui_print "if you are using magiskhideprops"
 ui_print "or other Tweak module"
 ui_print " "
 ui_print " "
-sleep 0.5
+sleep 1
 ui_print " 1- None"
 ui_print " "
 sleep 0.5
@@ -297,37 +242,44 @@ ui_print "[⚡️] Downloading the latest"
 ui_print "script(s) / application from Github..."
 ui_print " "
 
-wget -O "${MODPATH}/system/bin/crv2twtweaks" "https://raw.githubusercontent.com/CRANKV2/CRV2Tweaks/main/system/bin/crv2twtweaks"
+wget -O "${MODPATH}/system/bin/crv2twtweaks" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/system/bin/crv2twtweaks"
 
-wget -O "${MODPATH}/system/bin/crv2menu" "https://raw.githubusercontent.com/CRANKV2/CRV2Tweaks/main/system/bin/crv2menu"
+wget -O "${MODPATH}/system/bin/crv2menu" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/system/bin/crv2menu"
 
-wget -O "${MODPATH}/system/bin/cleaner" "https://raw.githubusercontent.com/CRANKV2/CRV2Tweaks/main/system/bin/cleaner"
+wget -O "${MODPATH}/system/bin/cleaner" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/system/bin/cleaner"
 
-wget -O "${MODPATH}/mod-util.sh" "https://raw.githubusercontent.com/CRANKV2/CRV2Tweaks/main/mod-util.sh"
+wget -O "${MODPATH}/mod-util.sh" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/mod-util.sh"
 
-wget -O "/data/local/tmp/CV2Tweaks.apk" "https://github.com/CRANKV2/CRV2Tweaks/blob/main/CV2Tweaks.apk?raw=true"
+wget -O "/data/local/tmp/CV2Tweaks.apk" "https://github.com/CRANKV2/Stratosphere_Tweaks/blob/main/CV2Tweaks.apk?raw=true"
 
-wget -O "/data/local/tmp/CV2Toast.apk" "https://github.com/CRANKV2/CRV2Tweaks/blob/main/CV2Toast.apk?raw=true"
+wget -O "/data/local/tmp/CV2Toast.apk" "https://github.com/CRANKV2/Stratosphere_Tweaks/blob/main/CV2Toast.apk?raw=true"
 
 ui_print "[⚡️] Good All necessary files have been successfully Placed."
 ui_print " "
 ui_print "[⚡️] Installing main application..."
 pm install /data/local/tmp/CV2Tweaks.apk
 ui_print " "
+sleep 2
 ui_print "[⚡️] Installing toasts app..."
 pm install /data/local/tmp/CV2Toast.apk
+ui_print " "
+sleep 2
+ui_print " "
 ui_print " "
 ui_print " [⚡️] The logs are hidden."
 ui_print "  [⚡️] if you need the logs" 
 ui_print "retrieve it by using Termux" 
 ui_print "type (su -c crv2menu."
-sleep 1
+ui_print " "
+sleep 1.5
 ui_print " "
 ui_print "⚡️ 🇸‌🇹‌🇷‌🇦‌🇹‌🇴‌🇸‌🇵‌🇭‌🇪‌🇷‌🇪‌ ⚡️" 
 ui_print "⚡️ 🇵‌🇪‌🇷‌🇫‌🇴‌🇷‌🇲‌🇦‌🇳‌🇨‌🇪‌ ⚡️"
 ui_print "⚡️ 🇲‌🇴‌🇩‌🇺‌🇱‌🇪‌ ⚡️"
+ui_print " "
 sleep 2
 ui_print "Installed successfuly!"
 ui_print "Restart phone and ENJOY!"
 ui_print " "
-sleep 2
+ui_print " "
+

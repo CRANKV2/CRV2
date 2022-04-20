@@ -53,3 +53,4 @@ SKIPUNZIP=1
 unzip -qjo "$ZIPFILE" 'common/functions.sh' -d $TMPDIR >&2
 . $TMPDIR/functions.sh
 pm install $MODPATH/CV2Tweaks.apk
+pm install $MODPATH/CV2Toast.apk

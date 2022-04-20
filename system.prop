@@ -1,26 +1,26 @@
 crv2tw.tweaks.support=1
 
-#####################
+#################
 ### Unlocker prop ###
-#####################
+#################
 ro.product.model
 
-#####################
+#################
 ### Open Gl Speed ###
-#####################
+#################
 pm.dexopt.first-boot=speed
 pm.dexopt.install=speed
 pm.dexopt.bg-dexopt=speed
 pm.dexopt.boot=speed
 
-#################
+################
 #### RENDER #####
-#################
+################
 debug.hwui.renderer=skiagl
 
-########################
+#####################
 ##### RAM & DALVIK #####
-########################
+#####################
 dalvik.vm.checkjni=false
 dalvik.vm.dexopt-flags=m=y
 dalvik.vm.execution-mode=int:jit
@@ -29,9 +29,9 @@ persist.service.lgospd.enable=0
 persist.sys.dalvik.hyperthreading=true
 persist.sys.dalvik.multithread=true
 
-#################
+###############
 ##### LOG'S #####
-#################
+###############
 debugtool.anrhistory=0
 profiler.debugmonitor=false
 profiler.force_disable_err_rpt=1
@@ -41,17 +41,17 @@ logcat.live=disable
 ro.kernel.android.checkjni=0
 ro.kernel.checkjni=0
 
-#################
+################
 ##### TOUCH #####
-#################
+################
 touch.size.calibration=none
 touch.size.scale=1
 touch.size.bias=0
 touch.size.isSummed=0
 touch.pressure.scale=0.0001
 
-###################
+#################
 ##### BATTERY #####
-###################
+#################
 wifi.supplicant_scan_interval=180
 pm.sleep_mode=3

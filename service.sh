@@ -20,8 +20,6 @@ wait_until_login() {
     done
     rm "$test_file"
 }
-wait_until_login
-
 
 # Sleep until boot completed
 until [ "$(getprop sys.boot_completed)" = "1" ] || [ "$(getprop dev.bootcomplete)" = "1" ]
@@ -38,8 +36,14 @@ write(){
 chmod 0644 "$1"
 echo "$2" >"$1"
 }
+
+sleep 10
+am start -a android.intent.action.MAIN -e toasttext "CV2 Performance Module Starting" -n bellavita.toast/.MainActivity
+sleep 5
+am start -a android.intent.action.MAIN -e toasttext "A module made by @CRANKV2 | Join @AndroidRootModulesCommunity on Telegram" -n bellavita.toast/.MainActivity
+
 # Readme
-wget -O "${MODPATH}/storage/emulated/0/.CRV2/README.md" "https://raw.githubusercontent.com/CRANKV2/CRV2Tweaks/main/README.md"
+wget -O "${MODPATH}/storage/emulated/0/.CRV2/README.md" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/README.md"
 
 # Setup tweaks
 sleep 60
@@ -143,16 +147,7 @@ su -c pm disable com.google.android.gms/.chimera.GmsIntentOperationService
 su -c pm disable com.google.android.gms/com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
 su -c pm disable com.google.android.gms/com.google.android.gms.mdm.receivers.MdmDeviceAdminReceiver
 
-
 # set swappiness to 100 (zram
 echo 100 > /proc/sys/vm/swappiness
-
-sleep 2
-
-am start -a android.intent.action.MAIN -e toasttext "CV2 Performance Module Starting" -n bellavita.toast.MainActivity
-
-sleep 3
-
-am start -a android.intent.action.MAIN -e toasttext "A module made by @CRANKV2 | Join @AndroidRootModulesCommunity on Telegram" -n bellavita.toast.MainActivity
 # done
 
