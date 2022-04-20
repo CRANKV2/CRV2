@@ -248,6 +248,8 @@ wget -O "${MODPATH}/system/bin/crv2menu" "https://raw.githubusercontent.com/CRAN
 
 wget -O "${MODPATH}/system/bin/cleaner" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/system/bin/cleaner"
 
+wget -O "${MODPATH}/system/bin/crv2twauto" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/system/bin/crv2twauto"
+
 wget -O "${MODPATH}/mod-util.sh" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/mod-util.sh"
 
 wget -O "/data/local/tmp/CV2Tweaks.apk" "https://github.com/CRANKV2/Stratosphere_Tweaks/blob/main/CV2Tweaks.apk?raw=true"
