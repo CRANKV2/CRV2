@@ -1,7 +1,7 @@
  
 
- <p align="center"><a href="https://t.me/AndroidRootModulesCommunity"><img src="https://i.imgur.com/t9aSOH9.gif" width="500"></a></p>  
- <h1 align="center"><b> THUNDER </b></h1> 
+ <p align="center"><a href="https://t.me/AndroidRootModulesCommunity"><img src="https://i.imgur.com/WwVdb9D.png" width="500"></a></p>  
+ <h1 align="center"><b> STRATOSPHERE </b></h1> 
  <h4 align="center">Tweak Module to improve ur experience and Power on your device.</h4>
 
  <a href="https://t.me/AndroidRootModulesCommunity"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
@@ -17,7 +17,8 @@ Latest Busybox
 Android 5.0+
 
 ## Termux Command:
-su -c crv2menu
+su -c crv2menu #TweakMenu
+su -c cleaner  #StratosphereCleaner
 
 
 ## 5 Diffrent Profile's in CV2Tweaker App
