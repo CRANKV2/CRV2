@@ -13,7 +13,7 @@ ls /data >/dev/null 2>&1 || { echo "$ID needs to run as root!"; echo "type 'su' 
 # Magisk Mod Directory
 [ -d "/sbin/.magisk" ] && MOUNTPATH="/sbin/.magisk/modules" || MOUNTPATH="$(find /dev -mindepth 2 -maxdepth 2 -type d -name ".magisk")/modules"
 MODDIR="$MOUNTPATH/$ID"
-[ ! -d $MODDIR ] && { echo "[!] CV2 Tweaks missing..."; exit 1; }
+[ ! -d $MODDIR ] && { echo "[!] Stratosphere Tweaks missing..."; exit 1; }
 
 # Set path to your busybox if applicable
 _bb=
@@ -343,7 +343,16 @@ Opcao8 () {
     echo ""
     echo "${G}[ ! ] this process CAN take between 5-10 minutes${N}"
     echo ""
-    cmd package bg-dexopt-job
+MODE="everything-profile"
+    echo ">>> PART 1"
+    echo 
+    pm compile -a -f -m "$MODE"
+    echo ">>> PART 2"
+    echo
+    pm compile -a -f --compile-layouts
+    echo ">>> Cleaning up"
+    pm bg-dexopt-job
+    echo ">>> Done"
     echo ""
     echo "${G}Process finished.${N}"
     echo ""
