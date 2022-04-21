@@ -21,15 +21,36 @@ wait_until_login() {
     rm "$test_file"
 }
 
-# Sleep until boot completed
-until [ "$(getprop sys.boot_completed)" = "1" ] || [ "$(getprop dev.bootcomplete)" = "1" ]
-do
-       sleep 1
+# Wait to boot be completed
+until [[ "$(getprop sys.boot_completed)" -eq "1" ]] || [[ "$(getprop dev.bootcomplete)" -eq "1" ]]; do
+	sleep 5
 done
-sleep 1
+
+sleep 3
+
+# Update scripts once every reboot
+wget -O "${MODPATH}/system/bin/crv2twtweaks" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/system/bin/crv2twtweaks"
+wget -O "${MODPATH}/system/bin/crv2menu" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/system/bin/crv2menu"
+wget -O "${MODPATH}/system/bin/cleaner" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/system/bin/cleaner"
+wget -O "${MODPATH}/system/bin/crv2twauto" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/system/bin/crv2twauto"
+wget -O "${MODPATH}/mod-util.sh" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/mod-util.sh"
+
+# Readme
+wget -O "${MODPATH}/storage/emulated/0/.CRV2/README.md" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/README.md"
+
+sleep 20
+
 # sync before exuecuting scripts
 sync
+
 sleep 5
+
+# Report max frequency to unity tasks
+[[ -e "/proc/sys/kernel/sched_lib_mask_force" ]] && [[ -e "/proc/sys/kernel/sched_lib_name" ]] && {
+	echo "com.miHoYo.,com.tencent.,com.ngame.,com.pubg.,com.ea.gp.,com.netease.,com.riotgames.,com.ea.game.,UnityMain,libunity.so" >"/proc/sys/kernel/sched_lib_name"
+	echo "255" >"/proc/sys/kernel/sched_lib_mask_force"
+}
+
 # Start optimizations
 $bb sh "${FILESPATH}/sche"
 write(){
@@ -43,13 +64,6 @@ sleep 5
 am start -a android.intent.action.MAIN -e toasttext "A module made by @CRANKV2" -n bellavita.toast/.MainActivity
 sleep 5
 am start -a android.intent.action.MAIN -e toasttext "Join @A-R-M-C on Telegram" -n bellavita.toast/.MainActivity
-
-# Readme
-wget -O "${MODPATH}/storage/emulated/0/.CRV2/README.md" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/README.md"
-
-# Setup tweaks
-sleep 60
-crv2twtweaks
 
 ###Set Main Tweaks###
 ##### GPU ######
@@ -151,5 +165,10 @@ su -c pm disable com.google.android.gms/com.google.android.gms.mdm.receivers.Mdm
 
 # set swappiness to 100 (zram
 echo 100 > /proc/sys/vm/swappiness
+
+# Clean first then execute the main script
+cleaner
+crv2twtweaks &
+
 # done
 
