@@ -4,7 +4,7 @@ ui_print " "
 sleep 1
 ui_print "🇸‌🇹‌🇷‌🇦‌🇹‌🇴‌🇸‌🇵‌🇭‌🇪‌🇷‌🇪‌"
 ui_print " "
-ui_print " - [⚡️] - VERSION: 0.4.0 - 04/20/2022"
+ui_print " - [⚡️] - VERSION: $(grep_prop version "$MODPATH/module.prop")"
 ui_print " "
 ui_print " - [⚡️] - CODENAME: STRATOSPHERE"
 sleep 2
@@ -19,7 +19,7 @@ ui_print " - [⚡️] - Your RAM Free Is : $(free | grep Mem |  awk '{print $2}'
 sleep 3
 ui_print " "
 ui_print "With this module"
-ui_print "you can choose"
+ui_print "you can choose,"
 ui_print "different profiles"
 ui_print "and improve your user experience."
 sleep 5
@@ -122,7 +122,7 @@ elif [ "$(pm list package nfs)" ]; then
 ui_print "[!] NFS Manager App has been detected, I recommend removing the app to avoid conflicts."
 
     fi
-	
+    sleep 4
 ui_print "[⚡️]DONE!"
 sleep 1.5
 
@@ -147,34 +147,34 @@ ui_print "or other Tweak module"
 ui_print " "
 ui_print " "
 sleep 1
-ui_print " 1- None"
+ui_print " ╠1╣- ⚡️None"
 ui_print " "
 sleep 0.5
-ui_print " 2- CODM 120 FPS Settings"
+ui_print " ╠2╣- ⚡️CODM 120 FPS Settings"
 ui_print " "
 sleep 0.5
-ui_print " 3- PUBGM 90 FPS Settings "
+ui_print " ╠3╣- ⚡️PUBGM 90 FPS Settings "
 ui_print " "
 sleep 0.5
-ui_print " 4- ML Max Settings "
+ui_print " ╠4╣- ⚡️ML Max Settings "
 ui_print " "
 sleep 0.5
-ui_print " 5- Asphalt 9 and Sky Children of the Light 60 FPS Settings"
+ui_print " ╠5╣- ⚡️Asphalt 9 and Sky Children of the Light 60 FPS Settings"
 ui_print " "
 sleep 0.5
-ui_print " 6- Game for Peace 90 FPS Settings"
+ui_print " ╠6╣- ⚡️Game for Peace 90 FPS Settings"
 ui_print " "
 sleep 0.5
-ui_print " 7- LifeAfter 120 FPS Settings"
+ui_print " ╠7╣- ⚡️LifeAfter 120 FPS Settings"
 ui_print " "
 sleep 0.5
-ui_print " 8- Apex Legends 120 FPS Settings"
+ui_print " ╠8╣- ⚡️Apex Legends 120 FPS Settings"
 ui_print " "
 sleep 0.5
-ui_print " 9- Super Clone 120 FPS Settings"
+ui_print " ╠9╣- ⚡️Super Clone 120 FPS Settings"
 ui_print " "
 sleep 0.5
-ui_print " 10- Apply Asphalt 9 and Sky Children of the Light 60 FPS Settings"
+ui_print " ╠10╣- ⚡️Apply Asphalt 9 and Sky Children of the Light 60 FPS Settings"
 ui_print " "
 sleep 0.5
 ui_print "[⚡️] Select which you want"
@@ -209,9 +209,60 @@ case "${KU}" in
 esac
 break
 ui_print " "
-ui_print "Selected: ${FCTEXTAD2} "
+ui_print "[⚡️] Selected: ${FCTEXTAD2} "
+ui_print "[⚡️] Let me do the Magic now!"
+sleep 2
+ui_print "[⚡️] Adding Games to Magisk Denylist (MagiskHide).."
+magiskhide disable >/dev/null 2>&1
+magiskhide enable >/dev/null 2>&1
+magisk --denylist enable >/dev/null 2>&1
+magiskhide add com.tencent.ig >/dev/null 2>&1
+magiskhide add com.epicgames.fortnite >/dev/null 2>&1
+magiskhide add com.vng.pubgmobile >/dev/null 2>&1
+magiskhide add com.pubg.krmobile >/dev/null 2>&1
+magiskhide add com.activision.callofduty.shooter >/dev/null 2>&1
+magiskhide add com.garena.game.codm >/dev/null 2>&1
+magiskhide add com.pubg.newstate >/dev/null 2>&1
+magiskhide add com.plato.android >/dev/null 2>&1
+magiskhide add com.dts.freefireth >/dev/null 2>&1
+magiskhide add com.dts.freefiremax >/dev/null 2>&1
+magiskhide add com.kitkagames.fallbuddies >/dev/null 2>&1
+magisk --denylist add com.pubg.newstate >/dev/null 2>&1
+magisk --denylist add com.garena.game.codm >/dev/null 2>&1
+magisk --denylist add com.activision.callofduty.shooter >/dev/null 2>&1
+magisk --denylist add com.pubg.krmobile >/dev/null 2>&1
+magisk --denylist add com.epicgames.fortnite >/dev/null 2>&1
+magisk --denylist add com.tencent.ig >/dev/null 2>&1
+magisk --denylist add com.plato.android >/dev/null 2>&1
+magisk --denylist add com.dts.freefireth >/dev/null 2>&1
+magisk --denylist add com.dts.freefiremax >/dev/null 2>&1
+magisk --denylist add com.kitkagames.fallbuddies >/dev/null 2>&1
+sleep 3
+ui_print "[⚡️] Added all Necessary Games!"
+sleep 3
+ui_print "[⚡️] Optimizing system settings..."
+settings put system anr_debugging_mechanism 0
+cmd power set-adaptive-power-saver-enabled true 2>/dev/null
+settings put global enable_freeform_support 1
+settings put global allow_signature_fake 1
+settings put system display_color_enhance 1
+cmd looper_stats disable 2>/dev/null
+cmd webviewupdater enable-multiprocess 2>/dev/null
+cmd dropbox set-rate-limit 10000 2>/dev/null
+pm disable com.miui.systemAdSolution >/dev/null 2>&1
+pm disable com.miui.analytics >/dev/null 2>&1
+cmd appops set com.android.backupconfirm RUN_IN_BACKGROUND ignore >/dev/null 2>&1
+cmd appops set com.google.android.setupwizard RUN_IN_BACKGROUND ignore >/dev/null 2>&1
+cmd appops set com.android.printservice.recommendation RUN_IN_BACKGROUND ignore >/dev/null 2>&1
+cmd appops set com.google.android.feedback RUN_IN_BACKGROUND ignore >/dev/null 2>&1
+cmd appops set com.google.android.onetimeinitializer RUN_IN_BACKGROUND ignore >/dev/null 2>&1
+cmd appops set com.xiaomi.joyose RUN_IN_BACKGROUND ignore >/dev/null 2>&1
+cmd appops set org.codeaurora.gps.gpslogsave RUN_IN_BACKGROUND ignore >/dev/null 2>&1
+cmd appops set com.android.onetimeinitializer RUN_IN_BACKGROUND ignore >/dev/null 2>&1
+cmd appops set com.qualcomm.qti.perfdump RUN_IN_BACKGROUND ignore >/dev/null 2>&1
+sleep 3
+ui_print "[⚡️]DONE!"
 ui_print " "
-sleep 1
 ui_print " - [⚡️] Created by CRANKV2 @ (Telegram)"
 sleep 2
 ui_print " "
