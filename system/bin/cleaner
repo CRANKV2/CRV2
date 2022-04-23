@@ -169,7 +169,7 @@ MainMenu() {
 
 TelGroup() {
 	printf "\033c"
-	termux-open-url https://t.me/AndroidRootModulesCommunity
+	am start --user 0 -a android.intent.action.VIEW https://t.me/AndroidRootModulesCommunity
 	printf "\033c"
 	cleaner
 	}

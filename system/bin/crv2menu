@@ -529,12 +529,17 @@ Opcao14 () {
 
 Opcao15 () {
     printf "\033c"
-    echo "${G}Access telegram group (support)${N}"
+    echo " "
+    echo " "
+    echo "${G}Access Telegram Group (support) please wait...${N}"
     sleep 2
+    am start --user 0 -a android.intent.action.VIEW https://t.me/AndroidRootModulesCommunity
     printf "\033c"
+    echo " "
+    echo " "
     echo "${B}[ 1 ] Return${N}"
     echo "${B}[ 0 ] Go out${N}"
-    echo ""
+    echo " "
     echo "[${C} Enter${N} ]: \c"
     read opcao
     case $opcao in
@@ -546,12 +551,14 @@ Opcao15 () {
 
 Opcao16 () {
     printf "\033c"
+    echo " "
+    echo " "
     echo "${G}Module informations:${N}"
     echo "${C}This module is focused on your experience, that's right, with this module you can choose several profiles according to your taste ${N}"
-    echo ""
+    echo " "
     echo "${B}[ 1 ] Return${N}"
     echo "${B}[ 0 ] Go out${N}"
-    echo ""
+    echo " "
     echo "[${C} Enter${N} ]: \c"
     read opcao
     case $opcao in
