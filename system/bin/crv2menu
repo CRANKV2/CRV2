@@ -317,9 +317,12 @@ Opcao7 () {
     printf "\033c"
     echo "${G}Fstrim initializing, please wait. >.<${N}"
     echo ""
-    fstrim -v /system
-    fstrim -v /data
-    fstrim -v /cache
+    fstrim -v /system_root
+    fstrim -v /vendor
+    fstrim -v /product
+    fstrim -v /odm
+    fstrim -v /optics
+    fstrim -v /prism
     sleep 1
     echo ""
     echo "${G}Process finished!${N}"
