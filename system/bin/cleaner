@@ -1,9 +1,82 @@
 #!/system/bin/sh
-# Credits to Pedro.
+# Made by CRANKV2 @GITHUB
 
-echo "${Y}||   Cleaning Stratosphere [by CV2]   |${N}"
-sleep 2
-rm -rf \
+# Variable @Telegram Group
+GROUP="@AndroidRootModulesCommunity on Telegram"
+
+# Magisk Module ID **
+ID="CRV2"
+
+# Detect root
+_name=$(basename $0)
+ls /data >/dev/null 2>&1 || { echo "$ID needs to run as root!"; echo "type 'su' then '$_name'"; exit 1; }
+
+# Magisk Mod Directory
+[ -d "/sbin/.magisk" ] && MOUNTPATH="/sbin/.magisk/#modules" || MOUNTPATH="$(find /dev -mindepth 2 -maxdepth #2 -type d -name ".magisk")/modules"
+MODDIR="$MOUNTPATH/$ID"
+[ ! -d $MODDIR ] && { echo "[!] Stratosphere Tweaks missing..."; exit 1; }
+
+# Set path to your busybox if applicable
+_bb=
+
+#Load mod-util.sh
+. $MODDIR/mod-util.sh || exit $?
+
+# Colors
+G='\e[01;32m'		# GREEN TEXT
+R='\e[01;31m'		# RED TEXT
+Y='\e[01;33m'		# YELLOW TEXT
+B='\e[01;34m'		# BLUE TEXT
+V='\e[01;35m'		# VIOLET TEXT
+Bl='\e[01;30m'		# BLACK TEXT
+C='\e[01;36m'		# CYAN TEXT
+W='\e[01;37m'		# WHITE TEXT
+BGBL='\e[1;30;47m'	# Background W Text Bl
+RBBT='\e[0;41m'    #Background R Text Bl
+PB='\e[0;45m'    #Background Purple Text Black
+N='\e[0m'			# How to use (example): echo "${G}example${N}"
+loadBar=' '			# Load UI
+# Remove color codes if -nc or in ADB Shell
+[[ -n "$1" ]] && [[ "$1" = "-nc" ]] && shift && NC=true
+[[ "$NC" ]] || [[ -n "$ANDROID_SOCKET_adbd" ]] && {
+  G=''; R=''; Y=''; B=''; V=''; Bl=''; C=''; W=''; N=''; BGBL=''; loadBar='=';
+}
+
+Menu() {
+echo -e '\n'
+    printf "\033c" 
+    echo ""
+    echo "   ${PB}$GROUP${N}"
+	echo ""
+    echo "${C}[ 1 ]${RBBT}⚡️Start CLEANER By @CRANKV2${N}"
+    echo ""
+    echo "${C}[ 2 ]${RBBT}⚡️New Feature Coming...${N}"
+    echo ""
+    echo "${C}[ M ]${RBBT}⚡️Return Main Menu...${N}"
+    echo ""
+    echo "${C}[ G ]${RBBT}⚡️Join Telegram Group!${N}"
+    echo ""
+    echo "${C}[ 0 ]${RBBT}⚡️Go out.${N}"
+    echo ""
+	echo -e '\n'
+    echo "[${C}||Enter Value||${N} ]: \c"
+read opcao
+    case $opcao in
+    1) Opcao1 ;;
+    2) Opcao2 ;;
+    0) GoOut ;;
+    M) MainMenu ;;
+    G) TelGroup ;;
+ esac
+    }
+
+    
+    Opcao1 () {
+    printf "\033c"
+    echo "${G}||   Cleaning Stratosphere [by CV2]   ||${N}"
+    sleep 1
+    echo ""
+    rm -rf \
 /data/*.log \
 /data/vendor/wlan_logs \
 /data/*.txt \
@@ -42,17 +115,88 @@ rm -rf \
 /data/media/0/duilite \
 /data/media/0/DkMiBrowserDemo \
 /data/media/0/.xlDownload \
+    echo ""
+    sleep 3
+    echo "${G}||⚡️[DONE!]⚡️||${N}"
+    echo ""
+    sleep 2
+    echo "${C}[ 1 ] ${RBBT} ⚡️Return Cleaner Menu${N}"
+    echo "${C}[ 0 ] ${RBBT} ⚡️Go out${N}"
+    echo ""
+    echo "${C}|| Enter Value ||${N} : \c"
+    read opcao
+    case $opcao in
+    1) Return ;;
+    0) GoOut ;;
+    M) MainMenu ;;
+    *) "${R}Unknown command, sorry.${N}" ; echo ; Opcao1 ;;
+    esac
+}
+    
+Opcao2 () {
+    printf "\033c"
+    echo "${RBBT}New Feature Coming...${N}"
+    sleep 2
+    echo ""
+    echo "${G}Any suggestions???${N}"
+    echo ""
+    echo "${G}Let me Know in GROUP!${N}"
+    echo ""
+    echo "${C}$GROUP${N}"
+    #set variable/features
+    echo ""
+    echo ""
+    echo "${C}[ G ] ${G}JOIN GROUP!${N}"
+    echo ""
+    echo "${C}[ 1 ] ${RBBT}Return Cleaner Menu${N}"
+    echo "${C}[ 0 ] ${RBBT}Go out${N}"
+    echo ""
+    echo "${C}|| Enter Value||${N} : \c"
+    read opcao
+    case $opcao in
+    1) Return ;;
+    0) GoOut ;;
+    M) MainMenu ;;
+    G) TelGroup ;;
+    *) "${R}Unknown command, sorry.${N}" ; echo ; Opcao2 ;;
+    esac
+}
+    
+MainMenu() {
+	printf "\033c"
+	crv2menu
+}	
 
-echo "${Y}|  [DONE!] Exiting Termux now please wait...  |${N}"
-sleep 4
-    echo ""
-    echo "▁▂▄▅▆▇█ 3 █▇▆▅▄▂▁"
+TelGroup() {
+	printf "\033c"
+	termux-open-url https://t.me/AndroidRootModulesCommunity
+	printf "\033c"
+	cleaner
+	}
+	
+Return() {
+    printf "\033c"
+    cleaner
+    printf "\033c"
+}
+
+GoOut() {
+    printf "\033c"
+    echo " "
+    echo " "
+    echo " "
+    echo "${G}$GROUP"
     sleep 1
-    echo ""
-    echo "▁▂▄▅▆▇█ 2 █▇▆▅▄▂▁"
+    echo " "
+    echo "${G}Bye, Hope u will be back soon from Stratosphere!${N}"
+    echo " "
     sleep 1
-    echo ""
-    echo "▁▂▄▅▆▇█ 1 █▇▆▅▄▂▁"
-    sleep 1
+    exit
+}
+
+printf "\033c"
+Menu
+
 # always return success, even if any command fail
-am startservice -a com.termux.service_stop com.termux/.app.TermuxService
+#Auto Termux Exit Variable
+#am startservice -a com.termux.service_stop com.termux/.app.TermuxService
