@@ -109,5 +109,5 @@ For you to report bugs, you must go to my telegram channel and report there, gro
 * huesos97 @ (Telegram)
 
 
-## thx all ❤️
+## thx all. ❤️
 
