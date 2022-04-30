@@ -75,39 +75,20 @@ For you to report bugs, you must go to my telegram channel and report there, gro
 
 
 
-#
-## Credits and special thanks:
-
-* pedro3z0 @ (Telegram) KTSR dev.
-
-* frap129 @ (GitHub) Spectrum dev.
-
-* Haxis_Lancelot @ (Telegram) Apollon dev.
-
-* KiraaDeath @ (Telegram) Zeus Tweaks dev.
-
-* imUsiF12 @ (Telegram) ThermodX dev.
-
-* Veez21 @ (GitHub) Mod Utils dev.
-
-* Zackptg5 @ (GitHub) MMT-Extended dev.
-
-
-
-## My Lovely Testers:
-
-* MRDOCA @ (Telegram)
-
-* Nathan @ (Telegram)
-
-* xxcalos84xx @ (Telegram)
-
-* UshieKane @ (Telegram)
-
-* LeeXDA18 @ (Telegram)
-
-* huesos97 @ (Telegram)
-
-
-## thx all. ❤️
+╔## My Lovely Testers:
+║
+╠═MRDOCA @ (Telegram)
+║
+╠══Nathan @ (Telegram)
+║
+╠═══xxcalos84xx @ (Telegram)
+║
+╠════UshieKane @ (Telegram)
+║
+╠═════LeeXDA18 @ (Telegram)
+║
+╠══════huesos97 @ (Telegram)
+║
+║
+╚## thx all. ❤️
 

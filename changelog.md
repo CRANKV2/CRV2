@@ -1,6 +1,31 @@
 
-##**V0.4.0 {CRANKV2} 20.04.2022
+##By CRANKV2 @Telegram
+##########################
+##⚡️v1.0 | StableRelease##
+##########################
+[⚡️] Added Donate Option in CRV2MENU {Termux} Thank You❤️
 
+[⚡️] Completely Remaster "CRV2MENU" 
+
+[⚡️] Completely Reworked Tweaker application!
+
+[⚡️] Completely Reworked installation!
+
+[⚡️] Removed some things what caused issues and Problems with application + script 
+
+[⚡️] Fixed many things!
+
+[⚡️] Implemented a bunch new things! since last release {0.4.0}
+
+[⚡️] Added battery saver on/off |switching profiles..
+
+[⚡️] Added Toast for manly all options in menu.
+
+[⚡️] Added new Cleaner menu {New Features coming for this menu!}
+
+##########################
+##**V0.4.0 {CRANKV2} 20.04.2022
+##########################
 [⚡️] Remaster to the installation interface
 
 [⚡️] Main script remaster
