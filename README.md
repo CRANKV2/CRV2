@@ -7,6 +7,9 @@
  <a href="https://t.me/AndroidRootModulesCommunity"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 
 Focused on Maximizing user experience, multiple profiles Changeable in-app + Termux Menu! Enjoy!
+ 
+
+![​Jokes Card​](https://readme-jokes.vercel.app/api)<br>
 
 
 ## Requirements:
