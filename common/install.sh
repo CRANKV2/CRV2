@@ -1,27 +1,27 @@
 ui_print " "
-ui_print " - [⚡️] - 🇨‌🇻‌② 🇹‌🇼‌🇪‌🇦‌🇰‌🇸‌"
+ui_print "🇨‌🇻‌② 🇹‌🇼‌🇪‌🇦‌🇰‌🇸‌"
 ui_print " "
 sleep 1
 ui_print "🇸‌🇹‌🇷‌🇦‌🇹‌🇴‌🇸‌🇵‌🇭‌🇪‌🇷‌🇪‌"
 ui_print " "
-ui_print " - [⚡️] - VERSION: $(grep_prop version "$MODPATH/module.prop")"
-ui_print " "
-ui_print " - [⚡️] - CODENAME: STRATOSPHERE"
+ui_print "╔ [⚡️] - VERSION: $(grep_prop version "$MODPATH/module.prop")"
+ui_print "║"
+ui_print "╠ [⚡️] - CODENAME: STRATOSPHERE"
 sleep 2
-ui_print " - [⚡️] - Your Device Is : $(getprop ro.build.product)"
-ui_print " - [⚡️] - Your Mobile Phone Is  : $(getprop ro.product.model)"
-ui_print " - [⚡️] - Your Manufacturer Is : $(getprop ro.product.system.manufacturer)"
-ui_print " - [⚡️] - Your Processor Is : $(getprop ro.product.board)"
-ui_print " - [⚡️] - Your CPU Is : $(getprop ro.hardware)"
-ui_print " - [⚡️] - Your Android Version Is : $(getprop ro.build.version.release)"
-ui_print " - [⚡️] - Your Kernel Is : $(uname -r)"
-ui_print " - [⚡️] - Your RAM Free Is : $(free | grep Mem |  awk '{print $2}')"
+ui_print "╠[⚡️] - Your Device Is : $(getprop ro.build.product)"
+ui_print "╠[⚡️] - Your Mobile Phone Is  : $(getprop ro.product.model)"
+ui_print "╠[⚡️] - Your Manufacturer Is : $(getprop ro.product.system.manufacturer)"
+ui_print "╠[⚡️] - Your Processor Is : $(getprop ro.product.board)"
+ui_print "╠[⚡️] - Your CPU Is : $(getprop ro.hardware)"
+ui_print "╠[⚡️] - Your Android Version Is : $(getprop ro.build.version.release)"
+ui_print "╠[⚡️] - Your Kernel Is : $(uname -r)"
+ui_print "╚[⚡️] - Your RAM Free Is : $(free | grep Mem |  awk '{print $2}')"
 sleep 3
 ui_print " "
-ui_print "With this module"
-ui_print "you can choose,"
-ui_print "different profiles"
-ui_print "and improve your user experience."
+ui_print "┏With this module"
+ui_print "┣you can choose,"
+ui_print "┣different profiles"
+ui_print "┗and improve your user experience."
 sleep 5
 ui_print " "
 ui_print "[⚡️] Checking for possible conflicts..."
@@ -131,55 +131,55 @@ LIFE="/storage/emulated/0/Android/data/com.netease.mrzhna/files/netease/g66/Docu
 APEX="/data/data/com.ea.gp.apexlegendsmobilefps/files/UE4Game/AClient/AClient/Saved/Config/Android/UserCustom.ini"
  
 sleep 3
-ui_print " [!] Important:"
-ui_print "These settings (can) cause"
-ui_print "errors in system applications."
+ui_print "┏[!] Important:"
+ui_print "┣These settings (can) cause"
+ui_print "┗errors in system applications."
 sleep 0.5
 ui_print " "
-ui_print "If u face some issue"
-ui_print "don't use one of this options"
-ui_print "handle with care!"
+ui_print "┏If u face some issue"
+ui_print "┣don't use one of this options"
+ui_print "┗handle with care!"
 sleep 1
 ui_print " "
-ui_print "Might not work"
-ui_print "if you are using magiskhideprops"
-ui_print "or other Tweak module"
+ui_print "┏Might not work"
+ui_print "┣if you are using magiskhideprops"
+ui_print "┗or other Tweak modules"
 ui_print " "
 ui_print " "
 sleep 1
-ui_print " ╠1╣- ⚡️None"
-ui_print " "
+ui_print "╔1═⚡️None"
+ui_print "║"
 sleep 0.5
-ui_print " ╠2╣- ⚡️CODM 120 FPS Settings"
-ui_print " "
+ui_print "╠2═⚡️CODM 120 FPS Settings"
+ui_print "║"
 sleep 0.5
-ui_print " ╠3╣- ⚡️PUBGM 90 FPS Settings "
-ui_print " "
+ui_print "╠3═ ⚡️PUBGM 90 FPS Settings "
+ui_print "║"
 sleep 0.5
-ui_print " ╠4╣- ⚡️ML Max Settings "
-ui_print " "
+ui_print "╠4═ ⚡️ML Max Settings "
+ui_print "║"
 sleep 0.5
-ui_print " ╠5╣- ⚡️Asphalt 9 and Sky Children of the Light 60 FPS Settings"
-ui_print " "
+ui_print "╠5═ ⚡️Asphalt 9 and Sky Children of the Light 60 FPS Settings"
+ui_print "║"
 sleep 0.5
-ui_print " ╠6╣- ⚡️Game for Peace 90 FPS Settings"
-ui_print " "
+ui_print "╠6═ ⚡️Game for Peace 90 FPS Settings"
+ui_print "║"
 sleep 0.5
-ui_print " ╠7╣- ⚡️LifeAfter 120 FPS Settings"
-ui_print " "
+ui_print "╠7═ ⚡️LifeAfter 120 FPS Settings"
+ui_print "║"
 sleep 0.5
-ui_print " ╠8╣- ⚡️Apex Legends 120 FPS Settings"
-ui_print " "
+ui_print "╠8═ ⚡️Apex Legends 120 FPS Settings"
+ui_print "║"
 sleep 0.5
-ui_print " ╠9╣- ⚡️Super Clone 120 FPS Settings"
-ui_print " "
+ui_print "╠9═ ⚡️Super Clone 120 FPS Settings"
+ui_print "║"
 sleep 0.5
-ui_print " ╠10╣- ⚡️Apply Asphalt 9 and Sky Children of the Light 60 FPS Settings"
-ui_print " "
+ui_print "╠10═⚡️Apply Asphalt 9 and Sky Children of the Light 60 FPS Settings"
+ui_print "║"
 sleep 0.5
-ui_print "[⚡️] Select which you want"
-ui_print "otherwise Select 'NONE'"
-ui_print "and Continue!"
+ui_print "╚[⚡️] Select which you want"
+ui_print "┢otherwise Select 'NONE'"
+ui_print "┗and Continue!"
 ui_print " "
 KU=1
 while true
@@ -209,10 +209,10 @@ case "${KU}" in
 esac
 break
 ui_print " "
-ui_print "[⚡️] Selected: ${FCTEXTAD2} "
-ui_print "[⚡️] Let me do the Magic now!"
+ui_print "╔[⚡️] Selected: ${FCTEXTAD2} "
+ui_print "╚[⚡️] Let me do the Magic now!"
 sleep 2
-ui_print "[⚡️] Adding Games to Magisk Denylist (MagiskHide).."
+ui_print "╔[⚡️] Adding Games to Magisk Denylist (MagiskHide).."
 magiskhide disable >/dev/null 2>&1
 magiskhide enable >/dev/null 2>&1
 magisk --denylist enable >/dev/null 2>&1
@@ -238,9 +238,9 @@ magisk --denylist add com.dts.freefireth >/dev/null 2>&1
 magisk --denylist add com.dts.freefiremax >/dev/null 2>&1
 magisk --denylist add com.kitkagames.fallbuddies >/dev/null 2>&1
 sleep 3
-ui_print "[⚡️] Added all Necessary Games!"
+ui_print "╠[⚡️] Added all Necessary Games!"
 sleep 3
-ui_print "[⚡️] Optimizing system settings..."
+ui_print "╠[⚡️] Optimizing system settings..."
 settings put system anr_debugging_mechanism 0
 cmd power set-adaptive-power-saver-enabled true 2>/dev/null
 settings put global enable_freeform_support 1
@@ -261,37 +261,37 @@ cmd appops set org.codeaurora.gps.gpslogsave RUN_IN_BACKGROUND ignore >/dev/null
 cmd appops set com.android.onetimeinitializer RUN_IN_BACKGROUND ignore >/dev/null 2>&1
 cmd appops set com.qualcomm.qti.perfdump RUN_IN_BACKGROUND ignore >/dev/null 2>&1
 sleep 3
-ui_print "[⚡️]DONE!"
-ui_print " "
-ui_print " - [⚡️] Created by CRANKV2 @ (Telegram)"
+ui_print "╠[⚡️]DONE!"
+ui_print "║"
+ui_print "╚[⚡️] Created by CRANKV2 @ (Telegram)"
 sleep 2
 ui_print " "
-ui_print " - Contributors, credits:"
+ui_print "┏Some credits:"
+sleep 1
+ui_print "┃"
+ui_print "┣pedro3z0, frap129, KiraaDeath ❤️ "
+ui_print "┣Haxis_Lancelot, imUsiF12, Veez21 ❤️"
+ui_print "┣Zackptg5 ❤️"
+sleep 1
+ui_print "┃"
+ui_print "┣And especially my Lovely Testers.. "
+ui_print "┣@Nathan, @MRDOCA ❤"
+ui_print "┣@xxcarlos84xx, @LeeXDA18 ❤"
+ui_print "┗@UshieKane ❤"
 sleep 1
 ui_print " "
-ui_print " - pedro3z0, frap129, KiraaDeath ❤️ "
-ui_print "Haxis_Lancelot, imUsiF12, Veez21 ❤️"
-ui_print "Zackptg5 ❤️"
+ui_print "╔ [⚡️] Join my support group:" 
+ui_print "║AndroidRootModulesCommunity"
+ui_print "╚(@Telegram)"
 sleep 1
 ui_print " "
-ui_print " And especially my Lovely Testers.. "
-ui_print "@Nathan, @MRDOCA ❤"
-ui_print "@xxcarlos84xx, @LeeXDA18 ❤"
-ui_print "@UshieKane ❤"
+ui_print "╔❤️ Thanks to everyone ❤️" 
+ui_print "╚❤️ for testing and helping me. ❤️"
 sleep 1
 ui_print " "
-ui_print " - [⚡️] Join my support group:" 
-ui_print "AndroidRootModulesCommunity"
-ui_print "(@Telegram)"
-sleep 1
-ui_print " "
-ui_print " ❤️ Thanks to everyone ❤️" 
-ui_print "❤️ for testing and helping me. ❤️"
-sleep 1
-ui_print " "
-ui_print "[⚡️] Downloading the latest"
-ui_print "script(s) / application from Github..."
-ui_print " "
+ui_print "╔[⚡️] Downloading the latest"
+ui_print "╠script(s) / application from Github..."
+ui_print "║"
 
 wget -O "${MODPATH}/system/bin/crv2twtweaks" "https://raw.githubusercontent.com/CRANKV2/Stratosphere_Tweaks/main/system/bin/crv2twtweaks"
 
@@ -307,22 +307,22 @@ wget -O "/data/local/tmp/CV2Tweaks.apk" "https://github.com/CRANKV2/Stratosphere
 
 wget -O "/data/local/tmp/CV2Toast.apk" "https://github.com/CRANKV2/Stratosphere_Tweaks/blob/main/CV2Toast.apk?raw=true"
 
-ui_print "[⚡️] Good All necessary files have been successfully Placed."
-ui_print " "
-ui_print "[⚡️] Installing main application..."
+ui_print "╠[⚡️] Good All necessary files have been successfully Placed."
+ui_print "║"
+ui_print "╠[⚡️] Installing main application..."
 pm install /data/local/tmp/CV2Tweaks.apk
-ui_print " "
+ui_print "║"
 sleep 2
-ui_print "[⚡️] Installing toasts app..."
+ui_print "╚[⚡️] Installing toasts app..."
 pm install /data/local/tmp/CV2Toast.apk
-ui_print " "
+ui_print ""
 sleep 2
 ui_print " "
 ui_print " "
-ui_print " [⚡️] The logs are hidden."
-ui_print "  [⚡️] if you need the logs" 
-ui_print "retrieve it by using Termux" 
-ui_print "type (su -c crv2menu."
+ui_print "╔[⚡️] The logs are hidden."
+ui_print "╠[⚡️] if you need the logs" 
+ui_print "╠retrieve it by using Termux" 
+ui_print "╚type (su -c crv2menu."
 ui_print " "
 sleep 1.5
 ui_print " "
@@ -331,8 +331,8 @@ ui_print "⚡️ 🇵‌🇪‌🇷‌🇫‌🇴‌🇷‌🇲‌🇦‌🇳‌
 ui_print "⚡️ 🇲‌🇴‌🇩‌🇺‌🇱‌🇪‌ ⚡️"
 ui_print " "
 sleep 2
-ui_print "Installed successfuly!"
-ui_print "Restart phone and ENJOY!"
-ui_print " "
+ui_print "╔Installed successfuly!"
+ui_print "║"
+ui_print "╚Restart phone and ENJOY!"
 ui_print " "
 
