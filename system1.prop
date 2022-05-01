@@ -1,0 +1,13 @@
+
+### prop Unlocker ###
+ro.product.model
+
+### Some other useful things ###
+ro.lmk.log_stats=false
+persist.sys.lmk.reportkills=false
+ro.lmk.debug=false
+sys.lmk.reportkills=false
+vendor.vidc.debug.level=0
+vidc.debug.level=0
+persist.traced_perf.enable=0
+persist.traced.enable=0
