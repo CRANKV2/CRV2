@@ -192,6 +192,7 @@ do
   fi
 if [[ "${KU}" -gt "10" ]]; then
     KU=1
+break
 fi
 done
 
