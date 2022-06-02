@@ -42,24 +42,6 @@ Android 5.0+
 ■ Gaming
 --->> Focused on making your device at its maximum potential for games, recommended for multitasking and Gaming 
 
-## Gaming Options while install into Magisk!
-■ CODM 120 FPS Settings
-
-■ PUBGM 90 FPS Settings
-
-■ ML Max Settings
-
-■ Game for Peace 90 FPS Settings
-
-■ Apex Legends 120 FPS Settings
-
-■ LifeAfter 120 FPS Settings
-
-■ Asphalt 9 and Sky Children of the Light 60 FPS Settings
-
-■ Super Clone 120 FPS Settings
-
-
 #
 ## FAQ
 
