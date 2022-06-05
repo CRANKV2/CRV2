@@ -1,6 +1,6 @@
-if [[ -e "/sdcard/CRV2" ]]
+if [[ -e "/sdcard/STRP" ]]
 then 
-rm -rf /sdcard/CRV2
+rm -rf /sdcard/STRP
 fi
 
 if [ -f $INFO ]; then

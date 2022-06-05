@@ -1,101 +1,97 @@
-##By CRANKV2 @Telegram
+#################
+###STRATOSPHERE###
+#######V2.0#######
+#################
+####CHANGELOG####
+#################
 
-##########################
-#####⚡️v1.15 | Stable#####
-##########################
-[⚡️]Added new .apk
+MAIN CHANGES;
+
+Completely Reworked Termux Menu!
+Added STRATOSPHERE LOGO!
+New Main Menu Banner!
+Reworked all Colors to make it more Stratosphere like!
+
+Completely Reworked Tweaker Script!
+>>Battery Profile more Powerfull now!
+>>Smooth UI is Smooth af!
+>>Balanced working more in Background now!
+>>Gaming is much more Powerfull now while Gaming, no fps drops no lags!
+
+Changed all Overall, Completely Reworked Stratosphere Module!
+
+Completely Reworked Changeable Profiles!
+
+New 5 Profiles;
+>>Smooth Ui 
+>>Maximize Battery Durability
+>>Make It Balanced
+>>Max CPU
+>>GAMING
+
+Reworked Mod-Util for Module itself!
+
+Completely Reworked MAGISK Installer while Flashing!
+>>Added Volume Key Selector for Further Updates!
+>>Changes overall to make it more Clean, better and faster to flash!
 
 
-##########################
-##⚡️v1.0 | StableRelease##
-##########################
-[⚡️] Added Donate Option in CRV2MENU {Termux} Thank You❤️
 
-[⚡️] Completely Remaster "CRV2MENU" 
+ADDED New Features;
 
-[⚡️] Completely Reworked Tweaker application!
+Added Thermal Menu with 4 Options
+>>Stock Thermal
+>>Less Heat
+>>More Heat
+>>Fully Disable Thermal
 
-[⚡️] Completely Reworked installation!
+Added Force Close All Menu
+>>Force Close all Background Shit (with all i mean rly all!)
 
-[⚡️] Removed some things what caused issues and Problems with application + script 
+Added Cleaner Menu
+>>Clean Stratosphere Magic
+>>Trim Partitions
+More Features Coming as Updates!
 
-[⚡️] Fixed many things!
+Added SRC Menu [Simple Resolution Changer]
+>>Change Screen Resolution Systemless, without affecting You're Current Refresh Rate!
 
-[⚡️] Implemented a bunch new things! since last release {0.4.0}
+Added CRASHFIX Menu!
+>>Fixes you're Random Game Crashes up to 85%!
 
-[⚡️] Added battery saver on/off |switching profiles..
+Added KCAL Menu!
+>>Turn on Custom STRP KCAL Preset or Reset them!
 
-[⚡️] Added Toast for manly all options in menu.
+Added OPENGL Menu!
+>>Change you're OpenGL state + Version
+>>Added Feature to directly Check OpenGL state in Menu!
+>>No need to Reboot Changes affecting Direclty!
 
-[⚡️] Added new Cleaner menu {New Features coming for this menu!}
+Added GMS DOZE Universal! + Eperimental Code!
+>>Optimizing And Adjusting Google Play Services For All Android Devices.
 
-##########################
-##**V0.4.0 {CRANKV2} 20.04.2022
-##########################
-[⚡️] Remaster to the installation interface
+Added Boost Option!
+>>Boosting You're Device Space By Removing Some Hidden Shit
 
-[⚡️] Main script remaster
+Added Busybox! Eperimental!
+Added new log files to log .tar file u can make over menu!
+Added Thermal into service.sh to persist Thermal State u set after rebooting ur phone!
 
-[⚡️] Added New (BETA) unlocker for APEX
 
-[⚡️] Conflict checker (Added new Variable)
+Various FIXES and adjustments;
+Battery saver on Battery profile > Enabled
+Battery saver on all other Profiles > Disabled
+Adjusted RAM Cleaner Code working more Powerfull now!
+Adjusted Low Power Mode Code working af now!
+Various Fixes and Tweaks added and changed to gave u the best what u can have!
+Disable touch boost on balanced and Battery profile
+General corrections
+Internet, zram tweaks included
+Adjustments to All Profiles
+New logs interface
+Fixed Various Bugs in menu and logs
+Updated Conflict checker
+Menu display changes
+Reworked Uninstaller fron Menu
 
-[⚡️] Changing icons in the app.
-
-[⚡️] New tweaks for each profile
-
-[⚡️] New menu functions. (stop thermal, clear ram with 3 different execution modes)
-
-[⚡️] Fixed a bug in the logs (sometimes the logs didn't work)
-
-[⚡️] Fixed bugs in the menu (menu did not close...)
-
-[⚡️] General corrections
-
-[⚡️] Possibility to clear battery status
-
-[⚡️] New logs interface (application of profiles)
-
-[⚡️] Minor other fixes...
-
-[⚡️] And some other adjustments...
-
-[⚡️] Some Fixes in tweaks
-
-##########################
-##**V0.3.0 {CRANKV2} 18.04.2022##
-##########################
-
-[⚡️] **Fixed Termux menu go back into main menu with "1"!
-
-[⚡️] Fixed Zygisk Incompatibility Issue into Magisk!
-
-[⚡️] Remastering in the install script 
-
-[⚡️] GMS optimization enabled
-
-[⚡️] Small Changes to all profiles
-
-[⚡️] Added zygisk support
-
-[⚡️] Added renice in some apps when applying profiles
-
-[⚡️] Improvements in the menu
-
-[⚡️] Updated base supporting current magisk versions
-
-[⚡️] Removing files to make it lighter
-
-[⚡️] Removed option to optimize apps on installation (many were having difficulties with this)
-
-[⚡️] And some other adjustments...
-
-[⚡️] Some Fixes in tweaks
-
-##########################
-##**V0.2.0 {CRANKV2} 15.04.2022##
-##########################
-
-[⚡️] **Initial build
-
-[⚡️] All early versions were lost along with the changelogs
+And many many more !!!

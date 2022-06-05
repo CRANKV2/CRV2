@@ -1,46 +1,41 @@
  
 
- <p align="center"><a href="https://t.me/AndroidRootModulesCommunity"><img src="https://i.imgur.com/WwVdb9D.png" width="500"></a></p>  
+ <p align="center"><a href="https://t.me/AndroidRootModulesCommunity"><img src="https://i.imgur.com/IOUJLXI.mp4" width="500"></a></p>  
  <h1 align="center"><b> STRATOSPHERE </b></h1> 
- <h4 align="center">Tweak Module to improve ur experience and Power on your device.</h4>
+ <h4 align="center">Tweak Module to improve ur experience, Power, Battery and Smoothness on your device.</h4>
 
  <a href="https://t.me/AndroidRootModulesCommunity"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 
-Focused on Maximizing user experience, multiple profiles Changeable in-app + Termux Menu! Enjoy!
- 
+Focused on Maximizing user experience, multiple profiles, Changeable in Termux Menu + Many More Features! Stay Fast!
 
-![​Jokes Card​](https://readme-jokes.vercel.app/api)<br>
-
+ <h1 align="center"><b> UNIVERSAL </b></h1> 
 
 ## Requirements:
 Magisk 22.0+
-
 Latest Busybox
-
 Android 5.0+
 
 ## Termux Command:
---->su -c crv2menu #StratosphereMenu
+---> su -c strpmenu #NewStratosphereMenu
 
 
----->su -c cleaner  #StratosphereCleaner
+## 5 Diffrent Profile's!
+■ Smooth Ui
+--->> Focused On Smoothness, Improve The UI Smoothness And Overall System Speed.
+
+■ Maximize Battery Durability 
+--->> Reduce Power Draw And Improve Energetic Efficiency, Maximize Battery Backup.
+
+■ Make It Balanced 
+-->> Balanced Between Battery And Performance, Perfect For Daily Use / Tasks.
+
+■ Max CPU
+--->> Force CPU To Max, Disabling CPU Throttling And Tweaking It To Max Power.
+
+■ GAMING
+--->> Recommended To Hardcore Gamers, Who Wanna Max Performance While Playing, It Set Both CPU / GPU To Max Power.
 
 
-## 5 Diffrent Profile's in CV2Tweaker App
-■ Auto Profile
---->> Will apply a specific Profile under specific conditions.
-
-■ Balanced
---->> Focused on leaving the system balanced, recommended for daily use.
-
-■ Battery
--->> Focused on saving as much battery as possible, recommended for high-end devices.
-
-■ Performance
---->> Focused on maximizing your device's performance, recommended use in slightly heavier applications.
-
-■ Gaming
---->> Focused on making your device at its maximum potential for games, recommended for multitasking and Gaming 
 
 #
 ## FAQ
@@ -60,20 +55,14 @@ For you to report bugs, you must go to my telegram channel and report there, gro
 
 
 
-╔## My Lovely Testers:
-║
-╠═MRDOCA @ (Telegram)
-║
-╠══Nathan @ (Telegram)
-║
-╠═══xxcalos84xx @ (Telegram)
-║
-╠════UshieKane @ (Telegram)
-║
-╠═════LeeXDA18 @ (Telegram)
-║
-╠══════huesos97 @ (Telegram)
-║
-║
-╚## thx all. ❤️
+Created By @CRANKV2 (Telegram)
+
+Some Credits:
+
+Too My Semxy Testers.. 
+@hezenscs,@Legend_Gaming077 ❤
+
+@@FastBoiOp, @RedmagicBoi ❤
+
+## Thanks To All Supporters❤️
 

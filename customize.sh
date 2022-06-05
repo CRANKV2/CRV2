@@ -1,24 +1,10 @@
-##########################################################################################
-#
-# MMT Extended Config Script
-#
-##########################################################################################
-
-##########################################################################################
-# Config Flags
-##########################################################################################
-
-# Uncomment and change 'MINAPI' and 'MAXAPI' to the minimum and maximum android version for your mod
-# Uncomment DYNLIB if you want libs installed to vendor for oreo+ and system for anything older
-# Uncomment DEBUG if you want full debug logs (saved to /sdcard)
-#MINAPI=21
-#MAXAPI=25
-#DYNLIB=true
-#DEBUG=true
-
-##########################################################################################
-# Replace list
-##########################################################################################
+SKIPMOUNT=false
+PROPFILE=true
+POSTFSDATA=false
+LATESTARTSERVICE=true
+CLEANSERVICE=true
+DEBUG=true
+MODDIR="/data/adb/modules"
 
 # List all directories you want to directly replace in the system
 # Check the documentations for more info why you would need this
@@ -43,14 +29,13 @@ REPLACE="
 set_permissions() {
   set_perm_recursive $MODPATH 0 0 0755 0644
   set_perm_recursive $MODPATH/system/bin root root 0777 0755
+    set_perm_recursive $MODPATH/system/vendor root root 0777 0755
 }
 
 ##########################################################################################
 # MMT Extended Logic - Don't modify anything after this
 ##########################################################################################
 
-SKIPUNZIP=1
+SKIPUNZIP=0
 unzip -qjo "$ZIPFILE" 'common/functions.sh' -d $TMPDIR >&2
 . $TMPDIR/functions.sh
-pm install $MODPATH/CV2Tweaks.apk
-pm install $MODPATH/CV2Toast.apk
