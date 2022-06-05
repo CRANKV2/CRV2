@@ -122,13 +122,6 @@ prop_process() {
 }
 
 
-# Credits
-ui_print "**************************************"
-ui_print "*   MMT Extended by Zackptg5 @ XDA   *"
-ui_print "*   Modified by CRANKV2 @ Telegram   *"
-ui_print "**************************************"
-ui_print " "
-
 # Check for min/max api version
 [[ -z "$MINAPI" ]] || { [[ "$API" -lt "$MINAPI" ]] && abort "[!] Your system API of ${API} is less than the minimum api of ${MINAPI}! Aborting!"; }
 [[ -z "$MAXAPI" ]] || { [[ "$API" -gt "$MAXAPI" ]] && abort "[!] Your system API of ${API} is greater than the maximum api of ${MAXAPI}! Aborting!"; }
@@ -161,29 +154,29 @@ ORIGDIR="$MAGISKTMP/mirror"
 
 # Debug
 "$DEBUG" && {
-	ui_print "[*] Debug mode"
+	ui_print "█Debug mode"
 	ui_print "    Module install log will include debug info."
 	ui_print ""
 	set -x
 }
 
 # Extract files
-ui_print "[⚡️] Extracting module files..."
+ui_print "█Extracting module files..."
 unzip -o "$ZIPFILE" -x 'META-INF/*' 'common/functions.sh' -d "$MODPATH" >&2
 [[ -f "$MODPATH/common/addon.tar.xz" ]] && tar -xf "$MODPATH/common/addon.tar.xz" -C "$MODPATH/common" 2>/dev/null
 
 # Run addons
 [[ "$(ls -A "$MODPATH"/common/addon/*/install.sh 2>/dev/null)" ]] && {
 	ui_print " "
-	ui_print "[⚡️] Running Addons..."
+	ui_print "█Running Addons..."
 	for i in "$MODPATH"/common/addon/*/install.sh; do
-		ui_print "[*] Running $(echo "$i" | sed -r "s|$MODPATH/common/addon/(.*)/install.sh|\1|")..."
+		ui_print "█Running $(echo "$i" | sed -r "s|$MODPATH/common/addon/(.*)/install.sh|\1|")..."
 		. "$i"
 	done
 }
 
 # Remove files outside of module directory
-ui_print "[⚡️] Removing old files..."
+ui_print "█Removing old files..."
 
 [[ -f "$INFO" ]] && {
 	while read LINE; do
@@ -197,11 +190,11 @@ ui_print "[⚡️] Removing old files..."
 }
 
 # Install process
-ui_print "[⚡️] Installing..."
+ui_print "█Installing..."
 
 [[ -f "$MODPATH/common/install.sh" ]] && . "$MODPATH/common/install.sh"
 
-ui_print "[⚡️] Installing for $ARCH SDK $API device..."
+ui_print "█Installing for $ARCH SDK $API device..."
 # Remove comments from files and place them, add blank line to end if not already present
 for i in $(find "$MODPATH" -type f -name *.sh -o -name *.prop -o -name *.rule); do
 	[[ -f "$i" ]] && {
@@ -234,7 +227,7 @@ done
 
 # Set permissions
 ui_print " "
-ui_print "[⚡️] Setting Permissions..."
+ui_print "█Setting Permissions..."
 set_perm_recursive "$MODPATH" 0 0 0755 0644
 [[ -d "$MODPATH/system/etc" ]] && set_perm_recursive "$MODPATH/system/etc" 0 0 0755 0755 u:object_r:system_etc_file:s0
 [[ -d "$MODPATH/system/bin" ]] && set_perm_recursive "$MODPATH/system/bin" 0 0 0755 0755 u:object_r:system_bin_file:s0

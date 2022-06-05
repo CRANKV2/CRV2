@@ -6,9 +6,9 @@ alias keycheck="$MODPATH/common/addon/Volume-Key-Selector/tools/$ARCH32/keycheck
 
 keytest() {
 
-  ui_print "  [⚡️] Vol Key Test"
+  ui_print "█Vol Key Test"
 
-  ui_print "  [!]Press a Vol Key:"
+  ui_print "█Press a Vol Key:"
 
   ui_print ""
 
@@ -18,13 +18,13 @@ keytest() {
 
   else
 
-    ui_print " [!]Try again:"
+    ui_print "█Try again:"
 
-    timeout 3 keycheck
+    timeout 5 keycheck
 
     local SEL=$?
 
-    [ $SEL -eq 143 ] && abort "   Vol key not detected!" || return 1
+    [ $SEL -eq 143 ] && abort "█Vol key not detected!" || return 1
 
   fi
 
@@ -106,7 +106,7 @@ OIFS=$IFS; IFS=\|; MID=false; NEW=false
 
 case $(echo $(basename $ZIPFILE) | tr '[:upper:]' '[:lower:]') in
 
-  *novk*) ui_print "[⚡️] Skipping Vol Keys ";;
+  *novk*) ui_print "█Skipping Vol Keys ";;
 
   *) if keytest; then
 
@@ -116,17 +116,17 @@ case $(echo $(basename $ZIPFILE) | tr '[:upper:]' '[:lower:]') in
 
        VKSEL=chooseportold
 
-       ui_print "[!] Legacy device detected! Using old keycheck method."
+       ui_print "█Legacy device detected! Using old keycheck method."
 
        ui_print " "
 
-       ui_print "[⚡️] Vol Key Programming "
+       ui_print "█Vol Key Programming "
 
-       ui_print "[!] Press Vol Up Again:"
+       ui_print "█Press Vol Up Again:"
 
        $VKSEL "UP"
 
-       ui_print "[!] Press Vol Down"
+       ui_print "█Press Vol Down"
 
        ui_print ""
 
