@@ -1,6 +1,6 @@
  
 
- <p align="center"><a href="https://t.me/AndroidRootModulesCommunity"><img src="https://i.imgur.com/IOUJLXI.mp4" width="500"></a></p>  
+ <p align="center"><a href="https://t.me/AndroidRootModulesCommunity"><img src="[https://i.imgur.com/IOUJLXI.mp4](https://imgur.com/zVLFhlJ)" width="500"></a></p>  
  <h1 align="center"><b> STRATOSPHERE </b></h1> 
  <h4 align="center">Tweak Module to improve ur experience, Power, Battery and Smoothness on your device.</h4>
 
