@@ -5,3 +5,5 @@ versionCode=20010
 author=@CRANKV2
 description=⚡️Focused on Maximizing user experience, multiple profiles, Changeable in Termux Menu + Many More Features! Stay Fast!⚡️
 support=https://t.me/AndroidRootModulesCommunity
+minMagisk=20300
+updateJson=https://raw.githubusercontent.com/CRANKV2/CRV2/main/update.json
