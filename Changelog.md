@@ -6,8 +6,8 @@
 #################
 
 
----HOTFIX FOR CHARGING ISSUE
-
+---HOTFIX FOR CHARGING ISSUE (20010)
+---Added Universal Debloater (20015)
 
 MAIN CHANGES;
 
