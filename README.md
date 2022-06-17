@@ -1,6 +1,6 @@
  
 
- <p align="center"><a href="https://t.me/AndroidRootModulesCommunity"><img src="https://imgur.com/82BEnsF.png" width="500"></a></p>  
+ <p align="center"><a href="https://t.me/AndroidRootModulesCommunity"><img src="https://i.imgur.com/IOUJLXI.mp4" width="500"></a></p>  
  <h1 align="center"><b> STRATOSPHERE </b></h1> 
  <h4 align="center">Tweak Module to improve ur experience, Power, Battery and Smoothness on your device.</h4>
 
@@ -16,28 +16,24 @@ Latest Busybox
 Android 5.0+
 
 ## Termux Command:
-#---> su -c strpmenu #NewStratosphereMenu
+---> su -c strpmenu #NewStratosphereMenu
 
 
 ## 5 Diffrent Profile's!
 ■ Smooth Ui
-#--->> Focused On Smoothness, Improve The UI Smoothness And Overall System Speed.
+--->> Focused On Smoothness, Improve The UI Smoothness And Overall System Speed.
 
-#
-## ■ Maximize Battery Durability 
-#--->> Reduce Power Draw And Improve Energetic Efficiency, Maximize Battery Backup.
+■ Maximize Battery Durability 
+--->> Reduce Power Draw And Improve Energetic Efficiency, Maximize Battery Backup.
 
-#
-## ■ Make It Balanced 
-#-->> Balanced Between Battery And Performance, Perfect For Daily Use / Tasks.
+■ Make It Balanced 
+-->> Balanced Between Battery And Performance, Perfect For Daily Use / Tasks.
 
-#
-## ■ Max CPU
-#--->> Force CPU To Max, Disabling CPU Throttling And Tweaking It To Max Power.
+■ Max CPU
+--->> Force CPU To Max, Disabling CPU Throttling And Tweaking It To Max Power.
 
-#
-## ■ GAMING
-#--->> Recommended To Hardcore Gamers, Who Wanna Max Performance While Playing, It Set Both CPU / GPU To Max Power.
+■ GAMING
+--->> Recommended To Hardcore Gamers, Who Wanna Max Performance While Playing, It Set Both CPU / GPU To Max Power.
 
 
 
@@ -64,9 +60,9 @@ Created By @CRANKV2 (Telegram)
 Some Credits:
 
 Too My Semxy Testers.. 
-@hezenscs,@Legend_Gaming077 ❤
+@hezenscs,@Legend_Gaming077, @Darkz❤
 
-@@FastBoiOp, @RedmagicBoi ❤
+@@FastBoiOp, @RedmagicBoi, @Prince, @BeastOg❤
 
 ## Thanks To All Supporters❤️
 

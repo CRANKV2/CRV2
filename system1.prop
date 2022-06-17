@@ -2,6 +2,16 @@
 ### prop Unlocker ###
 ro.product.model
 
+#Turn off vertical sync (V-Sync)
+debug.hwui.disable_vsync=true
+hwui.disable_vsync=true
+
+#Turn Off CPU Vsync Render
+debug.cpurend.vsync=false
+
+#Adjusting SF frame buffer
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
 ### Some other useful things ###
 ro.lmk.log_stats=false
 persist.sys.lmk.reportkills=false
