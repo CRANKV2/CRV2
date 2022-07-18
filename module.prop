@@ -1,9 +1,10 @@
 id=STRP
-name=🇸‌🇹‌🇷‌🇦‌🇹‌🇴‌🇸‌🇵‌🇭‌🇪‌🇷‌🇪‌ 
-version=v2.0
-versionCode=20023
+name=𝙎𝙏𝙍𝘼𝙏𝙊𝙎𝙋𝙃𝙀𝙍𝙀 ✗ 𝙋𝙀𝙍𝙁𝙊𝙍𝙈𝘼𝙉𝘾𝙀
+version=v2.1
+versionCode=20100
 author=@CRANKV2
-description=⚡️Focused on Maximizing user experience, multiple profiles, Changeable in Termux Menu + Many More Features! Stay Fast!⚡️
+description=▌Focused On Maximizing User Experience ▌Multiple Profiles, Changeable In Termux Menu + Many More Features! ▌ Stay Fast⚡️▌
+donate=https://www.paypal.com/donate/?hosted_button_id=ZYR8QRKTJ9NPU
 support=https://t.me/AndroidRootModulesCommunity
-minMagisk=20300
+minMagisk=23000
 updateJson=https://raw.githubusercontent.com/CRANKV2/CRV2/main/module.json

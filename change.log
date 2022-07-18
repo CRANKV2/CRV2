@@ -1,138 +1,137 @@
-# v2.0
-════════════════════
-### 𝙎𝙏𝙍𝘼𝙏𝙊𝙎𝙋𝙃𝙀𝙍𝙀 ###
-#### 𝘾𝙃𝘼𝙉𝙂𝙀𝙇𝙊𝙂 ####
-════════════════════
-𝙉𝙀𝙒
-Working for 32 & 64 Devices!
-𝙉𝙀𝙒
-════════════════════
-Changelog;
-███⊳[ 𝟐𝟎𝟎𝟐3 ]⊲███
--Fixed Busybox Issue!
+# v2.1 [20100] CHANGELOG
+- Removed Volume Selector Whole Flashing to get Smoother Installer!
+- Reworked Codes ▰ Props & Values on Tweaker To be more Powerfull!
+- Removed stuff what cause Conflict or Bootloop when using other STRP Family Modules with Stratosphere!
+- Reworked whole Installer + Added my whole TEAM!
+- Edited Toast Messages!
+- Disable touch boost on balanced and Battery profiles
+- Adjustments to All Profiles
+- General corrections
+- Fixed Various Bugs in menu and logs
+- Updated Conflict checker
+- Various Fixes and Tweaks added and changed to gave u the best what u can have!
+- Fixed Brightness issue
+- Removed some System Optimizations 
+- what caused random reboots or lags
+- Added new log files to log .tar file u can make over menu!
+- Adjustments on All Profiles
+- Various FIXES and adjustments
+- Added New KCAL Menu with 9 New Presets!
+- Added <Enforcing/Permissive> SELinux State
+- Added <Enable/Disable> Devfreq for better Latency
+- Added <Enable/Disable> Farst Charge Mode
+- Added <Enable/Disable> GAPPS
+- Added <Enable/Disable> Location Power Saving Mode
+- Added <46/50/55/60/90/120> HZ RefreshRateChanger
 
-███⊳[ 𝟐𝟎𝟎𝟐2 ]⊲███
--Fixed Brightness issue
-
--Removed some System Optimizations 
-what caused random reboots or lags
-
--Added Brutal Busybox support! 
-Important u need Brutal Busybox Module Installed!
-To Make sure all Features in Menu Working without Problems!
-
-███⊳[ 𝟐𝟎𝟎𝟐𝟏 ]⊲███
-Reworked GMS DOZE Script
-
-███⊳[ 𝟐𝟎𝟎𝟏𝟎 ]⊲███
----HOTFIX FOR CHARGING ISSUE
-
-███⊳[ 𝟐𝟎𝟎𝟏𝟓 ]⊲███
----Added Universal Debloater
-
-███⊳[ 𝟐𝟎𝟎𝟐𝟎 ]⊲███
----Added 32 BIT Support !
----New Menu Feature Added!
-══⇒Boost ur Network Speed and Performance!
----Fixed Brightness issue for some Devices!
-if some of u still having this issue, 
-then it wont came from Stratosphere!
----Fixed Ping and removed from BAG due to Conflicts with STRP!
----VSync disable; better fps
----Turn Off CPU Vsync Render
----Adjusted SF frame buffer
----Turned off a few additional kernel debuggers;
-for gaining slightly performance and battery life!
-════════════════════
-
-
-MAIN CHANGES v2.0;
-Completely Reworked Termux Menu!
-Added STRATOSPHERE LOGO!
-New Main Menu Banner!
-Reworked all Colors to make it more Stratosphere like!
-════════════════════
-Completely Reworked Tweaker Script!
->>Battery Profile more Powerfull now!
->>Smooth UI is Smooth af!
->>Balanced working more in Background now!
->>Gaming is much more Powerfull now while Gaming, no fps drops no lags!
-════════════════════
-Changed all Overall, Completely Reworked Stratosphere Module!
-════════════════════
-Completely Reworked Changeable Profiles!
-════════════════════
-New 5 Profiles;
->>Smooth Ui 
->>Maximize Battery Durability
->>Make It Balanced
->>Max CPU
->>GAMING
-════════════════════
-Reworked Mod-Util for Module itself!
-════════════════════
-Completely Reworked MAGISK Installer while Flashing!
->>Added Volume Key Selector for Further Updates!
->>Changes overall to make it more Clean, better and faster to flash!
-════════════════════
-
-
-ADDED New Features;
-════════════════════
-Added Thermal Menu with 4 Options
->>Stock Thermal
->>Less Heat
->>More Heat
->>Fully Disable Thermal
-════════════════════
-Added Force Close All Menu
->>Force Close all Background Shit (with all i mean rly all!)
-════════════════════
-Added Cleaner Menu
->>Clean Stratosphere Magic
->>Trim Partitions
-More Features Coming as Updates!
-════════════════════
-Added SRC Menu [Simple Resolution Changer]
->>Change Screen Resolution Systemless, without affecting You're Current Refresh Rate!
-════════════════════
-Added CRASHFIX Menu!
->>Fixes you're Random Game Crashes up to 85%!
-════════════════════
-Added KCAL Menu!
->>Turn on Custom STRP KCAL Preset or Reset them!
-════════════════════
-Added OPENGL Menu!
->>Change you're OpenGL state + Version
->>Added Feature to directly Check OpenGL state in Menu!
->>No need to Reboot Changes affecting Direclty!
-════════════════════
-Added GMS DOZE Universal! + Eperimental Code!
->>Optimizing And Adjusting Google Play Services For All Android Devices.
-════════════════════
-Added Boost Option!
->>Boosting You're Device Space By Removing Some Hidden Shit
-════════════════════
-Added Busybox! Eperimental!
-Added new log files to log .tar file u can make over menu!
-Added Thermal into service.sh to persist Thermal State u set after rebooting ur phone!
-════════════════════
-
-Various FIXES and adjustments;
-Battery saver on Battery profile > Enabled
-Battery saver on all other Profiles > Disabled
-Adjusted RAM Cleaner Code working more Powerfull now!
-Adjusted Low Power Mode Code working af now!
-Various Fixes and Tweaks added and changed to gave u the best what u can have!
-Disable touch boost on balanced and Battery profile
-General corrections
-Internet, tweaks included
-Adjustments to All Profiles
-New logs interface
-Fixed Various Bugs in menu and logs
-Updated Conflict checker
-Menu display changes
-Reworked Uninstaller fron Menu
-════════════════════
-And many many more !!!
-════════════════════
+--------
+# v2.0 [20022]
+- Working for 32 & 64 Devices!
+--------
+- Added Brutal Busybox support! 
+- Important u need Brutal Busybox Module Installed!
+- To Make sure all Features in Menu Working without Problems!
+--------
+# v2.0 [20021]
+- Reworked GMS DOZE Script
+--------
+# v2.0 [20010]
+- HOTFIX FOR CHARGING ISSUE
+--------
+# v2.0 [20015]
+- Added Universal Debloater
+--------
+# v2.0 [20020]
+- Added 32 BIT Support !
+- New Menu Feature Added!
+- Boost ur Network Speed and Performance!
+- Fixed Brightness issue for some Devices!
+- if some of u still having this issue, 
+- then it wont came from Stratosphere!
+- Fixed Ping and removed from BAG due to Conflicts with STRP!
+- VSync disable; better fps
+- Turn Off CPU Vsync Render
+- Adjusted SF frame buffer
+- Turned off a few additional kernel debuggers;
+- for gaining slightly performance and battery life!
+--------
+# MAIN CHANGES v2.0
+- Completely Reworked Termux Menu!
+- Added STRATOSPHERE LOGO!
+- New Main Menu Banner!
+- Reworked all Colors to make it more Stratosphere like!
+--------
+- Completely Reworked Tweaker Script!
+- Battery Profile more Powerfull now!
+- Smooth UI is Smooth af!
+- Balanced working more in Background now!
+- Gaming is much more Powerfull now while Gaming, no fps drops no lags!
+--------
+- Changed all Overall, Completely Reworked Stratosphere Module!
+--------
+- Completely Reworked Changeable Profiles!
+--------
+# New 5 Profiles
+- Smooth Ui 
+- Maximize Battery Durability
+- Make It Balanced
+- Max CPU
+- GAMING
+--------
+- Reworked Mod-Util for Module itself!
+--------
+- Completely Reworked MAGISK Installer while Flashing!
+- Added Volume Key Selector for Further Updates!
+- Changes overall to make it more Clean, better and faster to flash!
+--------
+# ADDED New Features;
+--------
+- Added Thermal Menu with 4 Options
+- Stock Thermal
+- Less Heat
+- More Heat
+- Fully Disable Thermal
+--------
+- Added Force Close All Menu
+- Force Close all Background Shit (with all i mean rly all!)
+--------
+- Added Cleaner Menu
+- Clean Stratosphere Magic
+- Trim Partitions
+- More Features Coming as Updates!
+--------
+- Added SRC Menu [Simple Resolution Changer]
+- Change Screen Resolution Systemless, without affecting You're Current Refresh Rate!
+--------
+- Added CRASHFIX Menu!
+- Fixes you're Random Game Crashes up to 85%!
+--------
+- Added KCAL Menu!
+- Turn on Custom STRP KCAL Preset or Reset them!
+--------
+- Added OPENGL Menu!
+- Change you're OpenGL state + Version
+- Added Feature to directly Check OpenGL state in Menu!
+- No need to Reboot Changes affecting Direclty!
+--------
+- Added GMS DOZE Universal! + Eperimental Code!
+- Optimizing And Adjusting Google Play Services For All Android Devices.
+--------
+- Added Boost Option!
+- Boosting You're Device Space By Removing Some Hidden Shit
+--------
+- Added Busybox! Eperimental!
+- Added new log files to log .tar file u can make over menu!
+- Added Thermal into service.sh to persist Thermal State u set after rebooting ur phone!
+--------
+- Battery saver on Battery profile > Enabled
+- Battery saver on all other Profiles > Disabled
+- Adjusted RAM Cleaner Code working more Powerfull now!
+- Adjusted Low Power Mode Code working af now!
+- Internet, tweaks included
+- New logs interface
+- Menu display changes
+- Reworked Uninstaller from Menu
+--------
+- And many many more !!!
+--------

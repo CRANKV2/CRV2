@@ -3,7 +3,7 @@ PROPFILE=true
 POSTFSDATA=false
 LATESTARTSERVICE=true
 CLEANSERVICE=true
-DEBUG=true
+DEBUG=false
 MODDIR="/data/adb/modules"
 
 # List all directories you want to directly replace in the system
