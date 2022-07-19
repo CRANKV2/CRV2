@@ -1,3 +1,8 @@
+# v2.1 [20101] HOTFIX CHANGELOG
+- Fixed Tweaks (Profiles) wont work.
+- Fixed Version Number in Menu
+- Fixed Service.sh / Main script don't run correctly
+---------
 # v2.1 [20100] CHANGELOG
 - Removed Volume Selector Whole Flashing to get Smoother Installer!
 - Reworked Codes ▰ Props & Values on Tweaker To be more Powerfull!

@@ -54,4 +54,4 @@ am start -a android.intent.action.MAIN -e toasttext "𝙅𝙤𝙞𝙣 @𝘼-𝙍
 
 
 sleep  25
-strptweaks
+stratospheretweaks
