@@ -1,3 +1,20 @@
+# v2.1 [20110] CHANGELOG
+- Added NEW Loading Bar animation when using some Options.
+- Added NEW Notification Mode (in you'r Statusbar) when set Profile.
+- Fixed EFC option for Qcom Soc's
+- Added screen Brightness Mode > "0"
+- Removed system Optimization when switch Profiles to get smoother crossing
+- Removed battery opt. on all profiles expect Battery Profile (bevore Profile itself gets loaded)
+- Drop all Caches bevore Profile gets loaded when changing Profile in Menu!
+- Force Close all Background shit bevore Profile gets set!
+- some minor text fixes in menu, options and codes made
+- some minor fixes in tweaker file (all profiles)
+- removed frame buffer adjust
+- Added new WIP FPS props for better stability and Smoothness
+- kill and disable logging *Completely*
+- check system.prop file on Github main page for more details what kill logger does if u have intrest on it
+End of Story..
+-------
 # v2.1 [20106] CHANGELOG
 - Fixed Menu Not Opening
 - Fixed 144hz Refresh Rate Option
