@@ -4,7 +4,7 @@
  <h1 align="center"><b> STRATOSPHERE </b></h1> 
  <h4 align="center">Tweak Module to improve ur experience, Power, Battery and Smoothness on your device.</h4>
 
- <a href="https://t.me/AndroidRootModulesCommunity"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+ <h1 align="center"><b><a href="https://t.me/AndroidRootModulesCommunity"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a></b></h1>
 
 <h1 align="center"><b>Focused on Maximizing user experience, multiple profiles, Changeable in Termux Menu + Many More Features! Stay Fast!</b></h1>
 
