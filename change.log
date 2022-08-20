@@ -1,3 +1,41 @@
+# v2.2 [20200] CHANGELOG
+- Transfered Notification Codes to Tweaker file, so Stratosphere Application will execute Notification too.
+- Reworked Tweaks Completely!
+- Imported NEW SRC Menu From STRPxSRC Module
+- renamed tweaks and Menu script
+- Reworked GMS DOZE Feature in Menu! Save as Much Battery as Possible!
+- Recommend using DOZE Option when using Battery Profile!
+- Added Disable GMS DOZE (just in case u face some issue)
+- Added LCD Power Reduce (Disable) On All Profiles
+- Added New CPU CONTROL Menu Enable / Disable Cores Easly over Menu
+- Added New STRP A.I (Option 6 in Menu) Mode incl. Battery Saver.
+- Script will check himself every 10 Minutes, as soon u reach 15% Battery, A.I will Activate Battery Profile and serveral options to save much battery as Possible.
+- Reworked and Fixed KCAL Menu
+- Added touch improvment helper
+- Added several Usefull Powerfull Props
+- Added CPU Scaling Governor Changer into CPU Core Control Menu
+- Download Application into ur Group
+--------
+- NEW FEATURE: Use new Termux Short Commands for Menu
+- How To Use..
+- Open Termux type 'su' and ENTER
+- use as example 'strp -h' Shows help menu and so on
+- These are All Options...
+-a ▰ Turn On SmoothUI Profile
+-b ▰ Turn On Battery Profile
+-c ▰ Turn On Balanced Profile
+-d ▰ Turn On MaxCPU Profile
+-e ▰ Turn On Gaming Profile
+-f ▰ Delete All Logs
+-g ▰ Clear RAM BASIC
+-h ▰ Showing This Info Page
+-i ▰ Clear RAM HEAVY
+-j ▰ Clear RAM ADVANCED
+-k ▰ Generating Logs For DEV (@CRANKV2)
+-l ▰ Enable GAPPS
+-m ▰ Disable GAPPS
+-u ▰ Uninstall Module
+--------
 # v2.1 [20115] HOTFIX
 - Fixed EFC Option in Menu!
 - Fixed sound Problem on some users!
