@@ -1,3 +1,13 @@
+# v2.2 [20205] CHANGELOG
+- Fixed CPU Control Menu added Menu Back Option
+- Added Daily GMS Doze to Menu
+- Changed Font into Module.prop for FOXMMM because of new API
+- Changed bit Menu Design & Colors
+- Fixed bootloop on some device
+- Fixed Random reboots
+- Fixed Conflict with BAG / PUBG / CODM Module
+- Minor bugs fixes and Improents
+------
 # v2.2 [20200] CHANGELOG
 - Transfered Notification Codes to Tweaker file, so Stratosphere Application will execute Notification too.
 - Reworked Tweaks Completely!

@@ -1,5 +1,5 @@
-stratosphere.tweaks.support=1
-stratospheretweaks.support=1
+#Prop To Make Application Work
+stratospherefreeversion.tweaks.support=1
 
 #####################
 ### Unlocker prop ###
@@ -36,38 +36,34 @@ ro.product.odm.model
 ro.product.odm.name
 ro.build.product
 
-### prop Unlocker ###
-ro.product.model
-
-
-# Kill Logger
-log.resolves=0
-log.pm4=0
-log.pm4mem=0
-log.shaders=0
-log.sc_dev=0
-log.cffdump=0
-log.cffdump_with_ifh=0                 
-log.cffdump_no_memzero=0       
-log.dumpx=0 
-log.primitives=0
-log_frame_info=0
-log_mp4dectime=0
-log_posttime=0
-log_profile=0
-log_playerdriver=0
-log_metadatadriver=0
-log_playerengine=0
+# Kill Logging
 log_datapath=0
-log_mp4parsernode=0
-log_basedecnode=0
-log_audiodecnode=0
-log_videodecnode=0
-log_outputnode=0
-log_outputnodeinputport=0
 log_audiooutput=0
 log_surfaceoutput=0
 log_omxmp4=0
 log_ao=0
 log_fps_interval=0
 debug_test=0
+log_mp4parsernode=0
+log_basedecnode=0
+log_audiodecnode=0
+log_videodecnode=0
+log_outputnode=0
+log_outputnodeinputport=0
+log.pm4mem=0
+log.cffdump_with_ifh=0                 
+log.cffdump_no_memzero=0       
+log.dumpx=0 
+log.primitives=0
+log.resolves=0
+log.pm4=0
+log_metadatadriver=0
+log_playerengine=0
+log_frame_info=0
+log_mp4dectime=0
+log_posttime=0
+log_profile=0
+log_playerdriver=0
+log.shaders=0
+log.sc_dev=0
+log.cffdump=0
