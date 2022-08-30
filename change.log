@@ -32,6 +32,14 @@ Changelog 20210:
 - Ring Phone Immediately when get call or message
 - Improve voice call quality 
 - Added quick power on device
+- Force third-party Launcher app into RAM, get a smoother Launcher
+- Disabling automation error reporting
+- changed wifi scan interval to 210
+- enabled tile rendering, fully utilize processing power, and improvment of 3D performance
+- 
+- 
+- 
+- 
 - 
 ------
 # v2.2 [20205] CHANGELOG
