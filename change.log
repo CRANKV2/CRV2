@@ -37,7 +37,7 @@ Changelog 20210:
 - changed wifi scan interval to 210
 - enabled tile rendering, fully utilize processing power, and improvment of 3D performance
 - enable/disable force backlight on buttons
-- 
+- enable/disable 'Stagefright'
 - 
 - 
 - 
