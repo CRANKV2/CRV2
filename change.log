@@ -1,3 +1,33 @@
+# v2.3 [20210]
+- Module now can only be FLASHED & UPDATED over FOXMMM!
+- It is MANDATORY to install FOXMMM to be able using Stratosphere or any future Module Updates!
+-------
+Changelog 20210:
+- Removed Battery saver enable in Battery Mode due to BLUR problems on miui OS
+### Added ~
+- Background Blur - Real Blur - Backdrop Sampling Props for miui Blur issue fixed now
+- Reworked GMS Doze feature in menu, now it is just 1 Daily use Option in Menu (and work more powerfull as before!)
+- Fixed some codes in UDB Option
+- Changed and Reworked some props 
+- Added new App Designs with diffrent Backgrounds > Check ur Group for various Previews of it
+- Adjusted RAM Cleaner Code working more Powerfull now
+- Ram boosting is set now to a new level
+- Added new cache Cleaner, now Stratosphere Cleans every app or system app no matter which one
+- Optimizing And Adjusting Google Play Services For All Android Devices.
+- Adjusted SF frame buffer
+- Added CPU (cci-power-imax)
+- Added Device Optimizing Feature when Flashing Module >Yes/No<
+- Added Light & Intense Idle Doze - Choose while Flashin >Light/Intense/Nothing<
+- Improvements in the menu
+- fs lease break time changed
+- sched migration cost ns adjusted
+- minor bugs fixed and many improvments made
+-
+-
+-
+-
+-
+------
 # v2.2 [20205] CHANGELOG
 - Fixed CPU Control Menu added Menu Back Option
 - Added Daily GMS Doze to Menu
