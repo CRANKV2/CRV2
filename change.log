@@ -24,7 +24,10 @@ Changelog 20210:
 - minor bugs fixed and many improvments made
 - Completely Reworked Installer and transfered all into NEW Foxmmm Library!
 - Improved DVM (short for Dalvik Virtual Machine) optimizes the virtual machine for performance, memory, and battery life.
--
+- changed min pointer duration <smooth scroll>
+- changed max fling velocity <smooth scroll>
+- changed min fling velocity <smooth scroll>
+- enabled hw debug <smooth scroll>
 -
 -
 ------
