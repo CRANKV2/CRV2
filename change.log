@@ -36,7 +36,7 @@ Changelog 20210:
 - Disabling automation error reporting
 - changed wifi scan interval to 210
 - enabled tile rendering, fully utilize processing power, and improvment of 3D performance
-- 
+- enable/disable force backlight on buttons
 - 
 - 
 - 
