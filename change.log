@@ -23,7 +23,7 @@ Changelog 20210:
 - sched migration cost ns adjusted
 - minor bugs fixed and many improvments made
 - Completely Reworked Installer and transfered all into NEW Foxmmm Library!
--
+- Improved DVM (short for Dalvik Virtual Machine) optimizes the virtual machine for performance, memory, and battery life.
 -
 -
 -
