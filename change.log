@@ -28,8 +28,11 @@ Changelog 20210:
 - changed max fling velocity <smooth scroll>
 - changed min fling velocity <smooth scroll>
 - enabled hw debug <smooth scroll>
--
--
+- Disabling black screen issue after quit call
+- Ring Phone Immediately when get call or message
+- Improve voice call quality 
+- 
+- 
 ------
 # v2.2 [20205] CHANGELOG
 - Fixed CPU Control Menu added Menu Back Option
