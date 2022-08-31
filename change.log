@@ -41,6 +41,7 @@ Changelog 20210:
 - enable/disable GPU rendering
 - enable/disable competitive mode for hardcore fps gamers
 - Several improvments overall
+- added STRP - POWER injector. To help dev finding issues easyer on some devices.
 ------
 # v2.2 [20205] CHANGELOG
 - Fixed CPU Control Menu added Menu Back Option
