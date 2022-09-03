@@ -3,7 +3,7 @@
 - It is MANDATORY to install FOXMMM to be able using Stratosphere or any future Module Updates!
 -------
 Changelog 20210:
-- Removed Battery saver enable in Battery Mode due to BLUR problems on miui OS
+- Removed  Battery saver enable in Battery Mode due to BLUR problems on miui OS
 ### Added ~
 - Background Blur - Real Blur - Backdrop Sampling Props for miui Blur issue fixed now
 - Reworked GMS Doze feature in menu, now it is just 1 Daily use Option in Menu (and work more powerfull as before!)
@@ -23,6 +23,7 @@ Changelog 20210:
 - sched migration cost ns adjusted
 - minor bugs fixed and many improvments made
 - Completely Reworked Installer and transfered all into NEW Foxmmm Library!
+- all what is enabled now shows as disable and same other way menu is now bit shorter
 - Improved DVM (short for Dalvik Virtual Machine) optimizes the virtual machine for performance, memory, and battery life.
 - changed min pointer duration <smooth scroll>
 - changed max fling velocity <smooth scroll>
@@ -34,15 +35,14 @@ Changelog 20210:
 - Added quick power on device
 - Force third-party Launcher app into RAM, get a smoother Launcher
 - Disabling automation error reporting
-- changed wifi scan interval to 210
+- changed wifi scan interval to 480 (8mins)
 - enabled tile rendering, fully utilize processing power, and improvment of 3D performance
 - enable/disable force backlight on buttons
 - enable/disable 'Stagefright'
 - enable/disable GPU rendering
 - enable/disable competitive mode for hardcore fps gamers
-- Several improvments overall
-- added STRP - POWER injector. To help dev finding issues easyer on some devices.
-------
+- Gaming Profile much more powerfull and stable now (tested myself & i love it)
+-------
 # v2.2 [20205] CHANGELOG
 - Fixed CPU Control Menu added Menu Back Option
 - Added Daily GMS Doze to Menu
@@ -212,7 +212,6 @@ End of Story..
 - Fixed Ping and removed from BAG due to Conflicts with STRP!
 - VSync disable; better fps
 - Turn Off CPU Vsync Render
-- Adjusted SF frame buffer
 - Turned off a few additional kernel debuggers;
 - for gaining slightly performance and battery life!
 --------
@@ -276,7 +275,6 @@ End of Story..
 - No need to Reboot Changes affecting Direclty!
 --------
 - Added GMS DOZE Universal! + Eperimental Code!
-- Optimizing And Adjusting Google Play Services For All Android Devices.
 --------
 - Added Boost Option!
 - Boosting You're Device Space By Removing Some Hidden Shit
@@ -287,7 +285,6 @@ End of Story..
 --------
 - Battery saver on Battery profile > Enabled
 - Battery saver on all other Profiles > Disabled
-- Adjusted RAM Cleaner Code working more Powerfull now!
 - Adjusted Low Power Mode Code working af now!
 - Internet, tweaks included
 - New logs interface
