@@ -1,10 +1,8 @@
-# v2.3 [20215] HOTFIX
-- Fixed enable disable Bootanimation
-- Fixed enable disable Button lights
-- 
--
--
-------
+# v2.3 [20215] Installer HOTFIX
+- Some user's having problem's flashing with VKS so...
+- Removed Volume Key selector
+- working fine now on A13
+-----
 # v2.3 [20210]
 - Module now can only be FLASHED & UPDATED over FOXMMM!
 - It is MANDATORY to install FOXMMM to be able using Stratosphere or any future Module Updates!
