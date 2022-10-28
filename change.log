@@ -1,3 +1,43 @@
+# v2.4 [20400]
+- REWORKEDCompletely Main Tweaker Script
+- REWORKED STRP MENU
+- REWORKED KCAL Menu code
+- REWORKED GMSDOZE Code
+- REWORKED Thermal .conf
+- REWORKED NetBoost Code
+-----
+- REPLACED Max Cpu Profile with Performance Mode
+-----
+- REMOVED Battery A.I Profile from menu
+- REMOVED force closing each time switching profile
+- REMOVED Many Props caused problems
+- REMOVED STRP-POWER Code to avoid random ux & status bar lags
+- REMOVED Boost Feature in Menu
+- REMOVED Volume Button Selector Transfered features into MENU
+------
+- ADDED Kill and Disable logging *Completely*
+- ADDED FASTCHARGE Menu from STRP x BOLT
+- ADDED New hidden Feature, you can find it in Menu
+- ADDED Support with STRP Tweaker App (can be combined now)
+- ADDED New log files to log .tar file u can make over menu!
+- ADDED Ram Booster ehen Clean all Caches
+- ADDED Ram Booster and cache Cleaning when changing Profiles
+- ADDED Ram & Cache Cleaner while Flashing before Finishing installer
+- ADDED New FPS Boost for Games in Gaming Mode (Tested by myself)
+------
+- FIXED Auto Brightness Problem
+- FIXED MIUI Blur problem
+- FIXED MIUI Dark mode problem
+- FIXED Module Conflicts
+- FIXED Sound Problem on some users!
+- FIXED Bluethoot connections issue
+- FIXED Safety Pass issue for some users
+- FIXED Thermal Bootloops (was a typo in code)
+- FIXED Change Renderer Feature
+- FIXED Some minor text in menu, options and codes
+- FIXED Various Bugs in Menu and logs
+- FIXED Installer Conflict Checker
+-----
 # v2.3 [20215] Installer HOTFIX
 - Some user's having problem's flashing with VKS so...
 - Removed Volume Key selector
@@ -98,7 +138,6 @@ Changelog 20210:
 --------
 # v2.1 [20115] HOTFIX
 - Fixed EFC Option in Menu!
-- Fixed sound Problem on some users!
 - minor bugs fixed what mention by users!
 -------
 # v2.1 [20110] CHANGELOG
@@ -110,11 +149,9 @@ Changelog 20210:
 - Removed battery opt. on all profiles expect Battery Profile (bevore Profile itself gets loaded)
 - Drop all Caches bevore Profile gets loaded when changing Profile in Menu!
 - Force Close all Background shit bevore Profile gets set!
-- some minor text fixes in menu, options and codes made
 - some minor fixes in tweaker file (all profiles)
 - removed frame buffer adjust
 - Added new WIP FPS props for better stability and Smoothness
-- kill and disable logging *Completely*
 - check system.prop file on Github main page for more details what kill logger does if u have intrest on it
 End of Story..
 -------
@@ -173,13 +210,10 @@ End of Story..
 - Disable touch boost on balanced and Battery profiles
 - Adjustments to All Profiles
 - General corrections
-- Fixed Various Bugs in menu and logs
-- Updated Conflict checker
 - Various Fixes and Tweaks added and changed to gave u the best what u can have!
 - Fixed Brightness issue
 - Removed some System Optimizations 
 - what caused random reboots or lags
-- Added new log files to log .tar file u can make over menu!
 - Adjustments on All Profiles
 - Various FIXES and adjustments
 - Added New KCAL Menu with 9 New Presets!
