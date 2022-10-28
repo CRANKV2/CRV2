@@ -30,8 +30,8 @@
 ### <h1 align="center"><b>Make It Balanced </b></h1>
 - Balanced Between Battery And Performance, Perfect For Daily Use / Tasks.
 
-### <h1 align="center"><b>Max CPU</b></h1>
-- Force CPU To Max, Disabling CPU Throttling And Tweaking It To Max Power.
+### <h1 align="center"><b>Performance Mode</b></h1>
+- Optimize Your Device Performance By Saving Battery And Minimizing Resources Usage
 
 ### <h1 align="center"><b>GAMING</b></h1>
 - Recommended To Hardcore Gamers, Who Wanna Max Performance While Playing, It Set Both CPU / GPU To Max Power.
@@ -50,7 +50,15 @@
 ## I'm having bugs with the module, where can I report it? 
 - For you to report bugs, you must go to my telegram channel and report there, group link ... https://t.me/AndroidRootModulesCommunity.
 
+#IMPORTANT
+-Usually it has to be compatible with any phone running Android OS but,
 
+- Get notified yourself that I am not responsible for bricked devices. We do our best help you out with any problems.
+- Thermonuclear war, or you getting fired because the alarm app failed.
+- Please do some research if you have any concerns about features included in this Codes/Module
+- YOU are choosing to make these modifications,
+- and if you point the finger at me for messing up your device,
+- I will laugh at you.
 
 <h1 align="center"><b>Created By @CRANKV2 (Telegram)</b></h1>
 
