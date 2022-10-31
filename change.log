@@ -1,3 +1,14 @@
+# v2.4 [20450] HOTFIX
+- Fixed FSTRIM Feature
+- Huge adjustment to Gaming Profile
+- Fixed auto adaptive mode when switching profile
+- Fixed (EGM) Change GPU Renderer Feature
+- Changed code (STRP-POWER) Connect to Gaming Profile
+- Some Menu and code bugs fixed that i found
+- Many Improvments made
+- Fixing Statusbar Tiles from app will come later because it takes bit longer to fix it.
+- Thanks for Understanding!
+------
 # v2.4 [20400]
 - REWORKEDCompletely Main Tweaker Script
 - REWORKED STRP MENU

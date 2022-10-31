@@ -44,6 +44,7 @@ cp -af $ModulPath/$ModulId/system/vendor/etc/thermal-engine.v5.conf $ModulPath/$
 cp -af $ModulPath/$ModulId/system/vendor/bin/thermal-engine-blank $ModulPath/$ModulId/system/vendor/bin/thermal-engine
 fi
 
+
 #Download Readme
 sleep 5
 am start -a android.intent.action.MAIN -e toasttext "𝙎𝙩𝙧𝙖𝙩𝙤𝙨𝙥𝙝𝙚𝙧𝙚 𝙄𝙣𝙞𝙩𝙞𝙖𝙡𝙞𝙯𝙞𝙣𝙜..." -n bellavita.toast/.MainActivity
@@ -53,5 +54,7 @@ sleep 5
 am start -a android.intent.action.MAIN -e toasttext "𝙅𝙤𝙞𝙣 @𝘼-𝙍-𝙈-𝘾 𝙤𝙣 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢" -n bellavita.toast/.MainActivity
 
 
-sleep  25
-stratospheretweaks
+sleep 10
+STRP-POWER
+sleep  15
+STRPFREETWEAK
