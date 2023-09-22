@@ -1,0 +1,353 @@
+# v2.5 - Fix
+- Fixed Menu
+- Fixed Menu Features
+- Flashable over Magisk AGAIN
+- Reworked Installer
+- Updated script's - fixed many bugs
+- Now all should work fine!
+------
+# v2.4 [20450] HOTFIX
+- Fixed FSTRIM Feature
+- Huge adjustment to Gaming Profile
+- Fixed auto adaptive mode when switching profile
+- Fixed (EGM) Change GPU Renderer Feature
+- Changed code (STRP-POWER) Connect to Gaming Profile
+- Some Menu and code bugs fixed that i found
+- Many Improvments made
+- Fixing Statusbar Tiles from app will come later because it takes bit longer to fix it.
+- Thanks for Understanding!
+------
+# v2.4 [20400]
+- REWORKEDCompletely Main Tweaker Script
+- REWORKED STRP MENU
+- REWORKED KCAL Menu code
+- REWORKED GMSDOZE Code
+- REWORKED Thermal .conf
+- REWORKED NetBoost Code
+-----
+- REPLACED Max Cpu Profile with Performance Mode
+-----
+- REMOVED Battery A.I Profile from menu
+- REMOVED force closing each time switching profile
+- REMOVED Many Props caused problems
+- REMOVED STRP-POWER Code to avoid random ux & status bar lags
+- REMOVED Boost Feature in Menu
+- REMOVED Volume Button Selector Transfered features into MENU
+------
+- ADDED Kill and Disable logging *Completely*
+- ADDED FASTCHARGE Menu from STRP x BOLT
+- ADDED New hidden Feature, you can find it in Menu
+- ADDED Support with STRP Tweaker App (can be combined now)
+- ADDED New log files to log .tar file u can make over menu!
+- ADDED Ram Booster ehen Clean all Caches
+- ADDED Ram Booster and cache Cleaning when changing Profiles
+- ADDED Ram & Cache Cleaner while Flashing before Finishing installer
+- ADDED New FPS Boost for Games in Gaming Mode (Tested by myself)
+------
+- FIXED Auto Brightness Problem
+- FIXED MIUI Blur problem
+- FIXED MIUI Dark mode problem
+- FIXED Module Conflicts
+- FIXED Sound Problem on some users!
+- FIXED Bluethoot connections issue
+- FIXED Safety Pass issue for some users
+- FIXED Thermal Bootloops (was a typo in code)
+- FIXED Change Renderer Feature
+- FIXED Some minor text in menu, options and codes
+- FIXED Various Bugs in Menu and logs
+- FIXED Installer Conflict Checker
+-----
+# v2.3 [20215] Installer HOTFIX
+- Some user's having problem's flashing with VKS so...
+- Removed Volume Key selector
+- working fine now on A13
+-----
+# v2.3 [20210]
+- Module now can only be FLASHED & UPDATED over FOXMMM!
+- It is MANDATORY to install FOXMMM to be able using Stratosphere or any future Module Updates!
+-------
+Changelog 20210:
+- Removed  Battery saver enable in Battery Mode due to BLUR problems on miui OS
+### Added ~
+- Background Blur - Real Blur - Backdrop Sampling Props for miui Blur issue fixed now
+- Reworked GMS Doze feature in menu, now it is just 1 Daily use Option in Menu (and work more powerfull as before!)
+- Fixed some codes in UDB Option
+- Changed and Reworked some props 
+- Added new App Designs with diffrent Backgrounds > Check ur Group for various Previews of it
+- Adjusted RAM Cleaner Code working more Powerfull now
+- Ram boosting is set now to a new level
+- Added new cache Cleaner, now Stratosphere Cleans every app or system app no matter which one
+- Optimizing And Adjusting Google Play Services For All Android Devices.
+- Adjusted SF frame buffer
+- Added CPU (cci-power-imax)
+- Added Device Optimizing Feature when Flashing Module >Yes/No<
+- Added Light & Intense Idle Doze - Choose while Flashin >Light/Intense/Nothing<
+- Improvements in the menu
+- fs lease break time changed
+- sched migration cost ns adjusted
+- minor bugs fixed and many improvments made
+- Completely Reworked Installer and transfered all into NEW Foxmmm Library!
+- all what is enabled now shows as disable and same other way menu is now bit shorter
+- Improved DVM (short for Dalvik Virtual Machine) optimizes the virtual machine for performance, memory, and battery life.
+- changed min pointer duration <smooth scroll>
+- changed max fling velocity <smooth scroll>
+- changed min fling velocity <smooth scroll>
+- enabled hw debug <smooth scroll>
+- Disabling black screen issue after quit call
+- Ring Phone Immediately when get call or message
+- Improve voice call quality 
+- Added quick power on device
+- Force third-party Launcher app into RAM, get a smoother Launcher
+- Disabling automation error reporting
+- changed wifi scan interval to 480 (8mins)
+- enabled tile rendering, fully utilize processing power, and improvment of 3D performance
+- enable/disable force backlight on buttons
+- enable/disable 'Stagefright'
+- enable/disable GPU rendering
+- enable/disable competitive mode for hardcore fps gamers
+- Gaming Profile much more powerfull and stable now (tested myself & i love it)
+-------
+# v2.2 [20205] CHANGELOG
+- Fixed CPU Control Menu added Menu Back Option
+- Added Daily GMS Doze to Menu
+- Changed Font into Module.prop for FOXMMM because of new API
+- Changed bit Menu Design & Colors
+- Fixed bootloop on some device
+- Fixed Random reboots
+- Fixed Conflict with BAG / PUBG / CODM Module
+- Minor bugs fixes and Improents
+------
+# v2.2 [20200] CHANGELOG
+- Transfered Notification Codes to Tweaker file, so Stratosphere Application will execute Notification too.
+- Reworked Tweaks Completely!
+- Imported NEW SRC Menu From STRPxSRC Module
+- renamed tweaks and Menu script
+- Reworked GMS DOZE Feature in Menu! Save as Much Battery as Possible!
+- Recommend using DOZE Option when using Battery Profile!
+- Added Disable GMS DOZE (just in case u face some issue)
+- Added LCD Power Reduce (Disable) On All Profiles
+- Added New CPU CONTROL Menu Enable / Disable Cores Easly over Menu
+- Added New STRP A.I (Option 6 in Menu) Mode incl. Battery Saver.
+- Script will check himself every 10 Minutes, as soon u reach 15% Battery, A.I will Activate Battery Profile and serveral options to save much battery as Possible.
+- Reworked and Fixed KCAL Menu
+- Added touch improvment helper
+- Added several Usefull Powerfull Props
+- Added CPU Scaling Governor Changer into CPU Core Control Menu
+- Download Application into ur Group
+--------
+- NEW FEATURE: Use new Termux Short Commands for Menu
+- How To Use..
+- Open Termux type 'su' and ENTER
+- use as example 'strp -h' Shows help menu and so on
+- These are All Options...
+-a ▰ Turn On SmoothUI Profile
+-b ▰ Turn On Battery Profile
+-c ▰ Turn On Balanced Profile
+-d ▰ Turn On MaxCPU Profile
+-e ▰ Turn On Gaming Profile
+-f ▰ Delete All Logs
+-g ▰ Clear RAM BASIC
+-h ▰ Showing This Info Page
+-i ▰ Clear RAM HEAVY
+-j ▰ Clear RAM ADVANCED
+-k ▰ Generating Logs For DEV (@CRANKV2)
+-l ▰ Enable GAPPS
+-m ▰ Disable GAPPS
+-u ▰ Uninstall Module
+--------
+# v2.1 [20115] HOTFIX
+- Fixed EFC Option in Menu!
+- minor bugs fixed what mention by users!
+-------
+# v2.1 [20110] CHANGELOG
+- Added NEW Loading Bar animation when using some Options.
+- Added NEW Notification Mode (in you'r Statusbar) when set Profile.
+- Fixed EFC option for Qcom Soc's
+- Added screen Brightness Mode > "0"
+- Removed system Optimization when switch Profiles to get smoother crossing
+- Removed battery opt. on all profiles expect Battery Profile (bevore Profile itself gets loaded)
+- Drop all Caches bevore Profile gets loaded when changing Profile in Menu!
+- Force Close all Background shit bevore Profile gets set!
+- some minor fixes in tweaker file (all profiles)
+- removed frame buffer adjust
+- Added new WIP FPS props for better stability and Smoothness
+- check system.prop file on Github main page for more details what kill logger does if u have intrest on it
+End of Story..
+-------
+# v2.1 [20106] CHANGELOG
+- Fixed Menu Not Opening
+- Fixed 144hz Refresh Rate Option
+--------
+# v2.1 [20104] CHANGELOG
+- DISABLE GAPPS > Removed Google Contacts, some Members Wished That To Be Able To Open It After Disabling It.
+- Added 144Hz Refresh Rate Option Supported Devices.
+- Added 'TINFO' Option > Shows INFO Page From My side About Thermal.
+- Reworked Tweak file (what includes all Profiles btw)
+- Adjusted Stune tweaks on all Profiles.
+- Adjusted Core Controls on all Profiles.
+- some new experimental stuff for I/O sched. (don't be scary about that u are safe to use it)
+- CPU tweaks adjusted on balanced and gaming
+- GPU Parameters adjusted
+- Dynamic FSYNC added.
+- Added disabling OnePlus Chain.
+- read/write threshold adjusted (all profiles)
+- new fingerprint boost added
+- min and max cpu clocks adjusted
+- enabled power efficince workqueue
+- added internet tweaks (not conflicting with PingxStabilizer!)
+- schedutil tweaks adjusted (all profiles)
+- fs lease break time changed
+- sched migration cost ns adjusted
+- more will come in next build.
+---------
+# v2.1 [20103] CHANGELOG
+- Fixed KCAL Menu dont Open for Some users.
+- Fixed DevFreq Boost <Again> ...
+- Added CPU Freq INFO
+- Added CPU Schedul. Type INFO
+- Added Total RAM INFO
+- Added Avaiable RAM INFO
+- Added <Enable/Disable> RAM BOOST
+---------
+# v2.1 [20102] HOTFIX CHANGELOG
+- Added Back Network Boost Option In Menu & Reworked Script.
+- Fixed <Enable/Disable> DevFreq Boost Option!
+- Fixed Fast Charge Option + Reworked Code and Added QCOMM and Exynos Support!
+- Added back <UDB> Option - STRP Universal Debloater!
+---------
+# v2.1 [20101] HOTFIX CHANGELOG
+- Fixed Tweaks (Profiles) wont work.
+- Fixed Version Number in Menu
+- Fixed Service.sh / Main script don't run correctly
+---------
+# v2.1 [20100] CHANGELOG
+- Removed Volume Selector Whole Flashing to get Smoother Installer!
+- Reworked Codes ▰ Props & Values on Tweaker To be more Powerfull!
+- Removed stuff what cause Conflict or Bootloop when using other STRP Family Modules with Stratosphere!
+- Reworked whole Installer + Added my whole TEAM!
+- Edited Toast Messages!
+- Disable touch boost on balanced and Battery profiles
+- Adjustments to All Profiles
+- General corrections
+- Various Fixes and Tweaks added and changed to gave u the best what u can have!
+- Fixed Brightness issue
+- Removed some System Optimizations 
+- what caused random reboots or lags
+- Adjustments on All Profiles
+- Various FIXES and adjustments
+- Added New KCAL Menu with 9 New Presets!
+- Added <Enforcing/Permissive> SELinux State
+- Added <Enable/Disable> Devfreq for better Latency
+- Added <Enable/Disable> Farst Charge Mode
+- Added <Enable/Disable> GAPPS
+- Added <Enable/Disable> Location Power Saving Mode
+- Added <46/50/55/60/90/120> HZ RefreshRateChanger
+
+--------
+# v2.0 [20022]
+- Working for 32 & 64 Devices!
+--------
+- Added Brutal Busybox support! 
+- Important u need Brutal Busybox Module Installed!
+- To Make sure all Features in Menu Working without Problems!
+--------
+# v2.0 [20021]
+- Reworked GMS DOZE Script
+--------
+# v2.0 [20010]
+- HOTFIX FOR CHARGING ISSUE
+--------
+# v2.0 [20015]
+- Added Universal Debloater
+--------
+# v2.0 [20020]
+- Added 32 BIT Support !
+- New Menu Feature Added!
+- Boost ur Network Speed and Performance!
+- Fixed Brightness issue for some Devices!
+- if some of u still having this issue, 
+- then it wont came from Stratosphere!
+- Fixed Ping and removed from BAG due to Conflicts with STRP!
+- VSync disable; better fps
+- Turn Off CPU Vsync Render
+- Turned off a few additional kernel debuggers;
+- for gaining slightly performance and battery life!
+--------
+# MAIN CHANGES v2.0
+- Completely Reworked Termux Menu!
+- Added STRATOSPHERE LOGO!
+- New Main Menu Banner!
+- Reworked all Colors to make it more Stratosphere like!
+--------
+- Completely Reworked Tweaker Script!
+- Battery Profile more Powerfull now!
+- Smooth UI is Smooth af!
+- Balanced working more in Background now!
+- Gaming is much more Powerfull now while Gaming, no fps drops no lags!
+--------
+- Changed all Overall, Completely Reworked Stratosphere Module!
+--------
+- Completely Reworked Changeable Profiles!
+--------
+# New 5 Profiles
+- Smooth Ui 
+- Maximize Battery Durability
+- Make It Balanced
+- Max CPU
+- GAMING
+--------
+- Reworked Mod-Util for Module itself!
+--------
+- Completely Reworked MAGISK Installer while Flashing!
+- Added Volume Key Selector for Further Updates!
+- Changes overall to make it more Clean, better and faster to flash!
+--------
+# ADDED New Features;
+--------
+- Added Thermal Menu with 4 Options
+- Stock Thermal
+- Less Heat
+- More Heat
+- Fully Disable Thermal
+--------
+- Added Force Close All Menu
+- Force Close all Background Shit (with all i mean rly all!)
+--------
+- Added Cleaner Menu
+- Clean Stratosphere Magic
+- Trim Partitions
+- More Features Coming as Updates!
+--------
+- Added SRC Menu [Simple Resolution Changer]
+- Change Screen Resolution Systemless, without affecting You're Current Refresh Rate!
+--------
+- Added CRASHFIX Menu!
+- Fixes you're Random Game Crashes up to 85%!
+--------
+- Added KCAL Menu!
+- Turn on Custom STRP KCAL Preset or Reset them!
+--------
+- Added OPENGL Menu!
+- Change you're OpenGL state + Version
+- Added Feature to directly Check OpenGL state in Menu!
+- No need to Reboot Changes affecting Direclty!
+--------
+- Added GMS DOZE Universal! + Eperimental Code!
+--------
+- Added Boost Option!
+- Boosting You're Device Space By Removing Some Hidden Shit
+--------
+- Added Busybox! Eperimental!
+- Added new log files to log .tar file u can make over menu!
+- Added Thermal into service.sh to persist Thermal State u set after rebooting ur phone!
+--------
+- Battery saver on Battery profile > Enabled
+- Battery saver on all other Profiles > Disabled
+- Adjusted Low Power Mode Code working af now!
+- Internet, tweaks included
+- New logs interface
+- Menu display changes
+- Reworked Uninstaller from Menu
+--------
+- And many many more !!!
+--------
