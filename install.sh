@@ -1,137 +1,79 @@
-#!/bin/sh
-
-if [ ! "$ANSI_SUPPORT" == "true" ] || [ ! -n "$MMM_EXT_SUPPORT" ]; then
-  abort "! Please Use Fox Magisk Module Manager (FOXMMM) To Flash This Module!"
-  ui_print ""
-  ui_print "https://github.com/Fox2Code/FoxMagiskModuleManager/releases"
-  ui_print ""
-  exit 1
-fi
-
-ui_print "#!useExt"
-mmm_exec() {
-  ui_print "$(echo -e "#!$@")"
-}
-
-ESC=""
-# ESC="\e"
-BL="$ESC[90m" #BLACK
-R="$ESC[91m" #Red
-O="$ESC[33m" #Orange
-Y="$ESC[93m" #Yellow
-G="$ESC[92m" #Green
-C="$ESC[96m" #Cyan
-B="$ESC[94m" #Blue
-P="$ESC[95m" #Purple
-N="$ESC[0m" #Reset
-
-ui_replace() {
-  mmm_exec setLastLine "$1"
-}
+#!/system/bin/sh
 
 #by CV2 (CRANKV2 @ GitHub)
 SKIPMOUNT=false
 PROPFILE=true
 POSTFSDATA=true
 LATESTARTSERVICE=true
-CLEANSERVICE=false
+CLEANSERVICE=true
 DEBUG=false
 MODDIR="/data/adb/modules"
 
-# List all directories you want to directly replace in the system
-# Check the documentations for more info why you would need this
 
-# Construct your list in the following format
-# This is an example
-REPLACE_EXAMPLE="
-/system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
-"
-
-# Construct your own list here
-REPLACE="
-"
 print_modname() {
 service=/data/adb/modules_update/STRP/service.sh
 ui_print " "
 sleep 1.5
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-sleep 2
+ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+sleep 1.5
 ui_print "
-${BL}░${N}${R}██████${N}${G}╗${N}${R}████████${N}${G}╗${R}${R}██████${N}${G}╗${R}${BL}░${N}${R}██████${N}${G}╗${N}${BL}░${R}
-${R}██${N}${G}╔════╝${N}${G}╚══${N}${R}██${N}${G}╔══╝${N}${R}██${N}${G}╔══${N}${R}██${N}${G}╗${N}${R}██${N}${G}╔══${N}${R}██${N}${G}╗${R}
-${G}╚${N}${R}█████${N}${G}╗${R}${BL}░${N}${BL}░░░${N}${R}██${N}${G}║${N}${BL}░░░${N}${R}██████${N}${G}╔╝${N}${R}██████${N}${G}╔╝${N}
-${BL}░${N}${G}╚═══${N}${R}██${N}${G}╗${R}${BL}░░░${N}${R}██${N}${G}║${N}${BL}░░░${N}${R}██${N}${G}╔══${N}${R}██${N}${G}╗${N}${R}██${N}${G}╔═══╝${N}${BL}░${N}
-${R}██████${N}${G}╔╝${N}${BL}░░░${N}${R}██${N}${G}║${N}${BL}░░░${N}${R}██${N}${G}║${N}${BL}░░${N}${R}██${N}${G}║${N}${R}██${N}${G}║${N}${BL}░░░░░${N}
-${G}╚═════╝${N}${BL}░${N}${BL}░░░${N}${G}╚═╝${N}${BL}░░░${N}${G}╚═╝${N}${BL}░░${N}${G}╚═╝${N}${G}╚═╝${N}${BL}░░░░░${N}
+░██████╗████████╗██████╗░██████╗░
+██╔════╝╚══██╔══╝██╔══██╗██╔══██╗
+╚█████╗░░░░██║░░░██████╔╝██████╔╝
+░╚═══██╗░░░██║░░░██╔══██╗██╔═══╝░
+██████╔╝░░░██║░░░██║░░██║██║░░░░░
+╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░
 "
+sleep 1.5
+ui_print "Powered By STRATOSPHERE"
+ui_print "Created By @CRANKV2 [Telegram]"
 sleep 2
-ui_print ""
-ui_print "${Y}Created By @CRANKV2${N} ${C}[Telegram]${N}"
-sleep 4
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-sleep 2.5
-ui_print " "
-ui_print "${G}╔${N}${Y}VERSION${N}${G} ▰${N}${R} 2${N}${G}.${Y}4 HOTFIX${N}"
-sleep 1
-ui_print "${G}║"
-ui_print "${G}╠▌${N}${Y}CODENAME${N}${G} ▰${N}${R} ${R}S${N}${O}T${Y}R${N}${G}A${N}${C}T${N}${B}O${N}${P}S${N}${G}P${N}${Y}H${N}${C}E${N}${B}R${N}${R}E${N}"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your Device Is${N}${G} ▰${N}${R} $(getprop ro.build.product)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your Mobile Phone Is${N}${G} ▰${N}${R} $(getprop ro.product.model)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your Manufacturer Is${N}${G} ▰${N}${R} $(getprop ro.product.system.manufacturer)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your Processor Is${N}${G} ▰${N}${R} $(getprop ro.product.board)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your CPU Is${N}${G} ▰${N}${R} $(getprop ro.hardware)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your CPU Arch Is${N}${G} ▰${N}${R} $(getprop ro.bionic.arch)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your Android Version Is${N}${G} ▰${N}${R} $(getprop ro.build.version.release)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your Brand Is${N}${G} ▰${N}${R} $(getprop ro.product.system.brand)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your Kernel Is${N}${G} ▰${N}${R} $(uname -r)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your Hardware Is${N}${G} ▰${N}${R} $(getprop ro.boot.hardware)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your SDK Is${N}${G} ▰${N}${R} $API"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your OpenGL ES Version Is${N}${G} ▰${N}${R} $(getprop ro.opengles.version)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your ROM Is${N}${G} ▰${N}${R} $(getprop ro.build.display.id)"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your RAM Free Is${N}${G} ▰${N}${R} $(free | grep Mem |  awk '{print $2}')"
-sleep 0.5
-ui_print "${G}╠▌${N}${Y}Your Disk Encryption Is${N}${G} ▰${N}${R} $(getprop ro.crypto.state)"
-sleep 0.5
-ui_print "${G}╚▌${N}${Y}Your SELinux Status is${N}${G} ▰${N}${R} $(su -c getenforce)"
-ui_print ""
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-sleep 3.5
-ui_print " "
-ui_print "${G}╔▌${N}${Y}Checking which ARM ur device has..."
+ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 sleep 2
-ui_print "${G}║${N}"
-ui_print "${G}╠▌${N}${Y}Your ARM Is${N}${G} :${N}${R} $(getprop ro.product.cpu.abi)"
+ui_print " "
+ui_print "╔VERSION ▰ 2.5"
 sleep 1
-ui_print "${G}║${N}"
-ui_print "${G}╠▌${N}${Y}Extracting and Moving files for${N}${R} $(getprop ro.product.cpu.abi)${N}"
-[[ "$IS64BIT" == "true" ]] && tar -xf "$MODPATH/strp64.tar.xz" -C "$MODPATH" || tar -xf "$MODPATH/strp32.tar.xz" -C "$MODPATH"
-sleep 2.5
-ui_print "${G}║${N}"
-ui_print "${G}╚══${N}${R}⇒${N}${G}Done .. ${N}${R}All Scripts Placed Successfully!${N}"
+ui_print "║"
+ui_print "╠▌CODENAME ▰ STRATOSPHERE"
+sleep 0.5
+ui_print "╠▌Your Device Is ▰ $(getprop ro.build.product)"
+sleep 0.5
+ui_print "╠▌Your Mobile Phone Is ▰ $(getprop ro.product.model)"
+sleep 0.5
+ui_print "╠▌Your Manufacturer Is ▰ $(getprop ro.product.system.manufacturer)"
+sleep 0.5
+ui_print "╠▌Your Processor Is ▰ $(getprop ro.product.board)"
+sleep 0.5
+ui_print "╠▌Your CPU Is ▰ $(getprop ro.hardware)"
+sleep 0.5
+ui_print "╠▌Your CPU Arch Is ▰ $(getprop ro.bionic.arch)"
+sleep 0.5
+ui_print "╠▌Your Android Version Is ▰ $(getprop ro.build.version.release)"
+sleep 0.5
+ui_print "╠▌Your Brand Is ▰ $(getprop ro.product.system.brand)"
+sleep 0.5
+ui_print "╠▌Your Kernel Is ▰ $(uname -r)"
+sleep 0.5
+ui_print "╠▌Your Hardware Is ▰ $(getprop ro.boot.hardware)"
+sleep 0.5
+ui_print "╠▌Your SDK Is ▰ $API"
+sleep 0.5
+ui_print "╠▌Your OpenGL ES Version Is ▰ $(getprop ro.opengles.version)"
+sleep 0.5
+ui_print "╠▌Your ROM Is ▰ $(getprop ro.build.display.id)"
+sleep 0.5
+ui_print "╠▌Your RAM Free Is ▰ $(free | grep Mem |  awk '{print $2}')"
+sleep 0.5
+ui_print "╠▌Your Disk Encryption Is ▰ $(getprop ro.crypto.state)"
+sleep 0.5
+ui_print "╚▌Your SELinux Status is ▰ $(su -c getenforce)"
 ui_print ""
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
+ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 sleep 2.5
 ui_print " "
-ui_print "${G}▌${N}${R}Checking For Possible Conflicts...${N}"
+ui_print "▌Checking For Possible Conflicts..."
 ui_print ""
-ui_print "${G}▌${N}${R}And Removing Them If They Exist!${N}"
+ui_print "▌And Removing Them If They Exist!"
 if [ -d $MODDIR/FDE ]; then
 ui_print "▰ FDE.AI Module Detected, Removing Because It Can Conflict."
 touch $MODDIR/FDE/remove
@@ -255,150 +197,63 @@ elif [ "$(pm list package nfs)" ]; then
 ui_print "▰ NFS Manager App Has Been Detected, I Am Removing The App To Avoid All Possible Conflictions."
 pm uninstall -k --user 0 com.nfs.nfsmanager
 fi
-    sleep 4
+    sleep 2
     ui_print ""
-ui_print "${G}▌${N}${R}DONE!${N}"
+ui_print "▌DONE!"
 ui_print " "
-sleep 3
-ui_print ""
-ui_print "${G}▌${N}${R}Searching for any type of Hacking apps & Tools !${N}"
-ui_print ""
-ui_print "${G}▌${N}${R}And Removing Them If They Exist!${N}"
-
-if [ "$(pm list package com.free.source)" ]; then
-ui_print "${R}▰ 4GG CHEATS App Has Been Detected, I will Remove it now you Noob.${N}"
-pm uninstall -k --user 0 com.free.source
-
-elif [ "$(pm list package com.id.esp)" ]; then
-ui_print "${R}▰ ESP App Has Been Detected, I will Remove it now you Noob.${N}"
-pm uninstall -k --user 0 com.id.esp
-
-elif [ "$(pm list package com.fanspro.sounix)" ]; then
-ui_print "${R}▰ VIP Super Vegita App Has Been Detected, I will Remove it now you Noob.${N}"
-pm uninstall -k --user 0 com.fanspro.sounix
-
-elif [ "$(pm list package com.fanspro.venom)" ]; then
-ui_print "${R}▰ VIP Venom App Has Been Detected, I will Remove it now you Noob.${N}"
-pm uninstall -k --user 0 com.fanspro.venom
-
-elif [ "$(pm list package com.xdz.dev)" ]; then
-ui_print "${R}▰ XDZ ESP App Has Been Detected, I will Remove it now you Noob.${N}"
-pm uninstall -k --user 0 com.xdz.dev
-
-elif [ "$(pm list package com.anonymous)" ]; then
-ui_print "${R}▰ PUBG ESP-Hack App Has Been Detected, I will Remove it now you Noob.${N}"
-pm uninstall -k --user 0 com.anonymous
-
-elif [ "$(pm list package apk.esp.noroot)" ]; then
-ui_print "${R}▰ No Root ESP App Has Been Detected, I will Remove it now you Noob.${N}"
-pm uninstall -k --user 0 apk.esp.noroot
-fi
-sleep 4
-    ui_print ""
-ui_print "${G}▌${N}${R}DONE!${N}"
-ui_print " "
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-ui_print " "
+ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 sleep 2.5
-ui_print "${G}▌${N}${Y}Adding Important Games To Magisk Denylist...${N}"
-magiskhide add com.tencent.ig >/dev/null 2>&1
-magiskhide add com.epicgames.fortnite >/dev/null 2>&1
-magiskhide add com.vng.pubgmobile >/dev/null 2>&1
-magiskhide add com.pubg.krmobile >/dev/null 2>&1
-magiskhide add com.activision.callofduty.shooter >/dev/null 2>&1
-magiskhide add com.garena.game.codm >/dev/null 2>&1
-magiskhide add com.pubg.newstate >/dev/null 2>&1
-magiskhide add com.plato.android >/dev/null 2>&1
-magiskhide add com.dts.freefireth >/dev/null 2>&1
-magiskhide add com.dts.freefiremax >/dev/null 2>&1
-magiskhide add com.kitkagames.fallbuddies >/dev/null 2>&1
-magisk --denylist add com.pubg.newstate >/dev/null 2>&1
-magisk --denylist add com.garena.game.codm >/dev/null 2>&1
-magisk --denylist add com.activision.callofduty.shooter >/dev/null 2>&1
-magisk --denylist add com.pubg.krmobile >/dev/null 2>&1
-magisk --denylist add com.epicgames.fortnite >/dev/null 2>&1
-magisk --denylist add com.tencent.ig >/dev/null 2>&1
-magisk --denylist add com.plato.android >/dev/null 2>&1
-magisk --denylist add com.dts.freefireth >/dev/null 2>&1
-magisk --denylist add com.dts.freefiremax >/dev/null 2>&1
-magisk --denylist add com.kitkagames.fallbuddies >/dev/null 2>&1
-sleep 3
-ui_print "${G}▌${N}${Y}Added All Necessary Games!${N}"
 ui_print ""
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-sleep 2.5
-ui_print "${G}▌${N}${Y}Clean some space before placing main files...${N}"
+i_print "▌Clean some space before placing main files..."
 ui_print ""
 echo 3 > /proc/sys/vm/drop_caches
-sleep 2.5
+sleep 1
 echo 0 > /proc/sys/vm/drop_caches
-ui_print "${G}▌DONE!"
+ui_print "▌DONE!"
 ui_print ""
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
+ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 ui_print ""
-ui_print "${G}▌${N}${Y}Optimizing some important system settings...${N}"
-
-cmd dropbox set-rate-limit 10000 2>/dev/null
-pm disable com.miui.systemAdSolution >/dev/null 2>&1
-pm disable com.miui.analytics >/dev/null 2>&1
-
-sleep 3
-ui_print ""
-ui_print "${G}▌${N}${R}DONE!${N}"
-sleep 2
-ui_print ""
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-ui_print ""
-ui_print "${G}▌${N}${B}Created By @CRANKV2${N} ${C}(Telegram)${N}"
-sleep 2
+ui_print "▌Created By @CRANKV2 (Telegram)"
+sleep 1.5
 ui_print " "
-ui_print "${G}┏${N}${Y}Some Credits:${N}"
-ui_print "${G}┃${N}"
+ui_print "┏Some Credits:"
+ui_print "┃"
 sleep 1
-ui_print "${G}┣${N}${Y}Too My TEAM...${N} "
-ui_print "${G}┃${N}"
+ui_print "┣Too My TEAM... "
+ui_print "┃"
 sleep 1
-ui_print "${G}┣${N}${R}@hezenscs, @Legend_Gaming078, @Sajadragon❤${N}"
-ui_print "${G}┃${N}"
-sleep 1
-ui_print "${G}┣${N}${G}@AdeRRo, @neginivesh, @Ayanokouj50iKiyotaka❤${N}"
-ui_print "${G}┃${N}"
-sleep 1
-ui_print "${G}┣${N}${C}@PJ_ARMC, @SmellsGood20, @NotDarkz, @PhatWalrus❤${N}"
-sleep 1
-ui_print "${G}┃${N}"
-ui_print "${G}┗${N}${B}@FastBoiOp, @exploit218, @RedmagicBoi, @BeastOg❤${N}"
-sleep 2
-ui_print " "
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-ui_print " "
-ui_print "${G}╔${N}${Y}Join The Support Group:${N}" 
-ui_print "${G}║${N}"
-ui_print "${G}╟${N}${R}AndroidRootModulesCommunity${N}${G} ▰${N}${B} GROUP${N}"
-ui_print "${G}║${N}"
-ui_print "${G}╟${N}${R}StratospherePerformance${N}${G} ▰${N}${B} CHANNEL${N}"
-ui_print "${G}║${N}"
-ui_print "${G}╚${N}${C}(@Telegram)${N}"
-sleep 4
-ui_print " "
-ui_print "❤️ ${C}Thanks To ${N}${G}EVERY${N}${C} Supporter!${N}❤️" 
-ui_print ""
-ui_print "❤${C}️And ! ${N}${G}YOU${N}${C} ! For Flashing And Using It${N}❤️"
+ui_print "┗@PJ_ARMC, @AdeRRo, @PhatWalrus❤"
 sleep 1
 ui_print " "
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-sleep 2
+ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ui_print " "
+ui_print "╔Join Our Group Channel:" 
+ui_print "║"
+ui_print "╟AndroidRootModulesCommunity ▰ GROUP"
+ui_print "║"
+ui_print "╟StratospherePerformance ▰ CHANNEL"
+ui_print "║"
+ui_print "╚(@Telegram)"
+sleep 1.5
+ui_print " "
+ui_print "❤️ Thanks To EVERY Supporter!❤️" 
 ui_print ""
-ui_print "${G}▌${N}${R}Installing ${Y}STRATOSPHERE TOAST${N}${R} App...${N}"
+ui_print "❤️And ! YOU ! For Flashing And Using STRP❤️"
+sleep 1
+ui_print " "
+ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+sleep 1
+ui_print ""
+ui_print "▌Installing STRATOSPHERE TOAST App..."
 pm install $MODPATH/StratosphereToast.apk
 ui_print ""
-sleep 2
-ui_print "${G}▌${N}${R}DONE!${N}"
+sleep 1
+ui_print "▌DONE!"
 ui_print " "
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
+ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 sleep 1.5
 ui_print ""
-ui_print "${G}▌${N}${Y}Set Up Pre - Permissions...${N}"
+ui_print "▌Set Up Pre - Permissions..."
 	ui_print ""
 set_perm_recursive $MODPATH 0 0 0755 0644
     set_perm $MODPATH/service.sh 0 0 0777
@@ -408,73 +263,33 @@ set_perm_recursive $MODPATH 0 0 0755 0644
             set_perm_recursive $MODPATH/system/vendor/etc/thermal-engine.v4.conf 0 0 0755 0644
                 set_perm_recursive $MODPATH/system/vendor/etc/thermal-engine.v5.conf 0 0 0755 0644
                     set_perm_recursive $MODPATH/system/vendor/etc/thermal-status.txt 0 0 0755 0644
-sleep 3
-ui_print "${G}▌${N}${R}DONE!${N}"
+sleep 1
+ui_print "▌DONE!"
 ui_print ""
 sleep 1
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
+ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 ui_print ""
 sleep 1.5
-ui_print "${G}▌${N}${G}Module Installed Successfully!${N}"
-sleep 1
-ui_print "${G}▌${N}${Y}Installation Date>>>${N}${R} $(date +"%d-%m-%Y %r" )${N}"
-sleep 1
-ui_print "${G}▌${N}${Y}Installed Into${N}${R} /data/adb/modules/STRP${N}"
+ui_print "▌Module Installed Successfully!"
+ui_print "▌Installation Date > $(date +"%d-%m-%Y %r" )"
+ui_print "▌Installed Into /data/adb/modules/STRP"
 ui_print " "
-sleep 0.5
-ui_print "${G}▌${N}${Y}Added >${N}${R} CPU BOOST${N}"
-sleep 0.5
+ui_print "▌Enjoy Many More Exclusive STRP Stuff!"
 ui_print " "
-ui_print "${G}▌${N}${Y}Added >${N}${R} GPU BOOST${N}"
-sleep 0.5
-ui_print " "
-ui_print "${G}▌${N}${Y}Added >${N}${R} FPS BOOST${N}"
-sleep 0.5
-ui_print " "
-ui_print "${G}▌${N}${Y}Added >${N}${R} Touchscreen Improvements${N}"
-sleep 0.5
-ui_print " "
-ui_print "${G}▌${N}${Y}Added >${N}${R} Cache Cleaner${N}"
-sleep 0.5
-ui_print " "
-ui_print "${G}▌${N}${Y}Added >${N}${R} Cleaner Menu${N}"
-sleep 0.5
-ui_print " "
-ui_print "${G}▌${N}${Y}Added >${N}${R} STRP MENU${N}"
-sleep 0.5
-ui_print " "
-ui_print "${G}▌${N}${Y}Added >${N}${R} STRP TWEAKS${N}"
-sleep 0.5
-ui_print " "
-ui_print "${G}▌${N}${Y}Added >${N}${R} Power BOOST${N}"
-sleep 0.5
-ui_print " "
-ui_print "${G}▌${N}${Y}Added >${N}${R} Doze MODE${N}"
-sleep 0.5
-ui_print " "
-ui_print "${G}▌${N}${Y}Added >${N}${R} Thermal Functions${N}"
-sleep 0.5
-ui_print ""
-ui_print ""
-ui_print "${G}▌${N}${R}And Many More Exclusive${N} ${C}S${N}${Y}T${N}${G}R${N}${B}P${N}${R} Stuff!${N}"
-ui_print " "
-ui_print "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
+ui_print "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 ui_print ""
 sleep 1.5
-ui_print "${G}▌${N}${R}Restart Phone...${N}"
+ui_print "▌Restart Phone..."
 sleep 1
 ui_print ""
-ui_print "${G}▌${N}${R}Open${N}${Y} TERMUX${N}${R} Application"
+ui_print "▌Open TERMUX Application"
 sleep 1
 ui_print ""
-ui_print "${G}▌${N}${R}And Use${N}${Y} 'su -c strpmenu' ${N}${R}To Open Up Menu!${N}"
+ui_print "▌And Use 'su -c strpmenu' To Open Up Menu!"
 sleep 1
-ui_print "${G}▌${N}${C}Stay Fast!${N} ⚡️"
+ui_print "▌Stay Fast! ⚡️"
 ui_print " "
-sleep 4
-ui_print " "
-ui_print " "
-ui_print " "
+sleep 2.5
 ui_print " "
 ui_print ""
 }

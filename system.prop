@@ -1,5 +1,17 @@
 #Prop To Make Application Work
 stratospherefreeversion.tweaks.support=1
+competitive.mode.state=0
+devfreq.mode.state=0
+fastcharge.mode.state=0
+ramboost.mode.state=0
+gpuchange.mode.state=0
+stagefright.mode.state=0
+
+
+#Miui Blur FIX
+ro.surface_flinger.supports_background_blur=1
+ro.miui.has_real_blur=1
+ro.miui.backdrop_sampling_enabled=true
 
 #####################
 ### Unlocker prop ###
