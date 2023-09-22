@@ -1,5 +1,4 @@
 MODDIR=${0%/*}
-setenforce <SELINUX_MODE>
 conflict=$(xml=$(find /data/adb -iname "*.xml");for i in $xml; do if grep -q 'allow-in-power-save package="com.google.android.gms"' $i 2>/dev/null; then echo "$i";fi; done)
  for i in $conflict
  do
