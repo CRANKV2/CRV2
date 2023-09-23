@@ -1,4 +1,6 @@
 # v2.5 - Fix
+- Added Device Info Code for our strp.cloud statistics
+- check out https://http://strp.cloud/stats for public stats
 - Fixed Menu
 - Fixed Menu Features
 - Flashable over Magisk AGAIN
